@@ -34,12 +34,13 @@
             <a href="#" class="">Aidan Andrucyk Photography</a>
          </div>
          <ul class="links">
-            <li class="About"><a href="#about">About</a></li>
+            <li class="About"><a href="index.html#about">About</a></li>
             <li>
                <div class="dropdown">Portfolio
                   <i class="fa fa-angle-down"></i>
                   <div class="dropdown-content">
-                     <a href="#">Wedding</a>
+                     <a
+                        href="https://www.google.com/search?q=hi&rlz=1C1CHBF_enUS1038US1038&oq=hi&aqs=chrome..69i57j46i199i433i465i512j0i433i512j46i131i433i650j0i433i512j46i512j69i60l2.361j0j9&sourceid=chrome&ie=UTF-8">Wedding</a>
                      <a href="#">Event</a>
                      <a href="#">Portraits</a>
                      <a href="#">Graduation</a>
@@ -56,27 +57,27 @@
          <div class="toggle_btn"><i class="fa-solid fa-bars"></i>
          </div>
       </div>
- 
+
    </header>
 
    <div class="dropdown_menu">
-      <li><a href="#about">About</a></li>
+      <li><a class='drop_link' href="index.html#about">About</a></li>
       <li>
          <div class="dropdown">Portfolio
             <i class="fa fa-angle-down"></i>
             <div class="dropdown-content">
-               <a href="#">Wedding</a>
-               <a href="#">Event</a>
-               <a href="#">Portraits</a>
-               <a href="#">Graduation</a>
-               <a href="#">Street</a>
-               <a href="#">Film</a>
+               <a class='drop_link' href="#">Wedding</a>
+               <a class='drop_link' href="#">Event</a>
+               <a class='drop_link' href="#">Portraits</a>
+               <a class='drop_link' href="#">Graduation</a>
+               <a class='drop_link' href="#">Street</a>
+               <a class='drop_link' href="#">Film</a>
             </div>
          </div>
       </li>
-      <li><a href="#">Testimonials</a></li>
-      <li><a href="">FAQ</a></li>
-      <li><a href="#" class="action_btn">Contact</a></li>
+      <li><a class='drop_link' href="#">Testimonials</a></li>
+      <li><a class='drop_link' href="">FAQ</a></li>
+      <li><a class='drop_link' href="#" class="action_btn">Contact</a></li>
    </div>
 
    <section id="hero">
@@ -116,21 +117,31 @@
             </p>
             <ol>
                <li>
-                  <b>1. Authentic & Emotional Storytelling:</b> I consider my style of wedding photography to be photojournalistic, meaning I focus on documenting the genuine emotions and candid moments. Rather than posing for the camera in the style that the photographer thinks is pretty, I do my best to bring out laughter, natural interactions, spontaneous moments as they unfold. This approach helps authentically tell the unique story of your wedding day as well as evoke emotions that transport you back to the moments captured in the images. 
+                  <b>1. Authentic & Emotional Storytelling:</b> I consider my style of wedding photography to be
+                  photojournalistic, meaning I focus on documenting the genuine emotions and candid moments. Rather than
+                  posing for the camera in the style that the photographer thinks is pretty, I do my best to bring out
+                  laughter, natural interactions, spontaneous moments as they unfold. This approach helps authentically
+                  tell the unique story of your wedding day as well as evoke emotions that transport you back to the
+                  moments captured in the images.
 
                </li>
                <li>
-                  <b>2. Unobtrusive Coverage:</b> I aim to be as unobtrusive as possible, ensuring that you and your guests can experience the moment without the interruptions of an in-your-face photographer.
+                  <b>2. Unobtrusive Coverage:</b> I aim to be as unobtrusive as possible, ensuring that you and your
+                  guests can experience the moment without the interruptions of an in-your-face photographer.
                </li>
 
                <li>
-                  <b>3. Emphasis on People & Relationships:</b> Beyond just capturing the typical posed portraits, your photos will place attention to the interactions, emotions, and connections between family members, friends, and yourself. The resulting images reflect the genuine love, happiness, and warmth that surround your day. 
+                  <b>3. Emphasis on People & Relationships:</b> Beyond just capturing the typical posed portraits, your
+                  photos will place attention to the interactions, emotions, and connections between family members,
+                  friends, and yourself. The resulting images reflect the genuine love, happiness, and warmth that
+                  surround your day.
                </li>
                <li>
-                  <b>4. Timeless & Natural Aesthetic:</b> By avoiding excessive or artificial styling, the images represent meaningful and unadulterated moments that look and feel like what you experienced.
+                  <b>4. Timeless & Natural Aesthetic:</b> By avoiding excessive or artificial styling, the images
+                  represent meaningful and unadulterated moments that look and feel like what you experienced.
                </li>
                <li>
-                  <b>5. Customer service:</b> I do everything I can to make any request possible! 
+                  <b>5. Customer service:</b> I do everything I can to make any request possible!
 
                </li>
 
@@ -138,7 +149,8 @@
 
             <p><b>Want to know more about me? </b>
                <br>I’m a grad student and long-time photographer who also enjoys making spreadsheets, watching nerdy
-               YouTube videos, and hiking! If there's anything else you would like to know or ask about, feel free to reach out at
+               YouTube videos, and hiking! If there's anything else you would like to know or ask about, feel free to
+               reach out at
                aidanmaphotography@gmail.com!
 
             </p>
@@ -147,7 +159,7 @@
    </section>
 
    <section class="body" id="testimonial_rec">
-      
+
       <img src="" alt="">
 
    </section>
@@ -166,12 +178,21 @@
 
       toggleBtn.onclick = function () {
          dropDownMenu.classList.toggle('open')
-         const isOpen = dropDownMenu.classList.contains('open')
-
-         toggleBtnIcon.classList = isOpen
+         toggleBtnIcon.classList = dropDownMenu.classList.contains('open')
             ? "fa-solid fa-xmark"
             : "fa-solid fa-bars"
       }
+
+      document.onclick = function (e) {
+
+         if (e.target.classList == 'drop_link') {
+            toggleBtnIcon.classList = dropDownMenu.classList.contains('open')
+            ? "fa-solid fa-bars"
+            : "fa-solid fa-xmark"
+            dropDownMenu.classList.remove('open')
+         }
+      }
+
    </script>
 
 </body>
