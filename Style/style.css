@@ -8,7 +8,7 @@ html {
   --nwhiteaccent: hsl(0, 0%, 92%);
   --textcolor: hsl(48, 14%, 43%);
   --accentcolor: hsl(41, 68%, 83%);
-  --nblack:  hsl(60, 2%, 11%);
+  --nblack: hsl(60, 2%, 11%);
   --adoblue: #1a202c;
 }
 
@@ -612,12 +612,15 @@ section#hero {
   padding: 4rem;
   width: 48rem;
 }
+
 .accordion .accordion-item {
   border-bottom: 1px solid var(--accentcolor);
 }
+
 .accordion .accordion-item button[aria-expanded='true'] {
   border-bottom: 1px solid var(--accentcolor);
 }
+
 .accordion button {
   position: relative;
   display: block;
@@ -631,20 +634,24 @@ section#hero {
   background: none;
   outline: none;
 }
+
 .accordion button:hover,
 .accordion button:focus {
   cursor: pointer;
   color: var(--nblack);
 }
+
 .accordion button:hover::after,
 .accordion button:focus::after {
   cursor: pointer;
   color: var(--nblack);
   border: 1px solid var(--nblack);
 }
+
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
 }
+
 .accordion button .icon {
   display: inline-block;
   position: absolute;
@@ -655,6 +662,7 @@ section#hero {
   border: 1px solid;
   border-radius: 22px;
 }
+
 .accordion button .icon::before {
   display: block;
   position: absolute;
@@ -665,6 +673,7 @@ section#hero {
   height: 2px;
   background: currentColor;
 }
+
 .accordion button .icon::after {
   display: block;
   position: absolute;
@@ -675,18 +684,22 @@ section#hero {
   height: 10px;
   background: currentColor;
 }
+
 .accordion button[aria-expanded='true'] {
-  color:var(--nblack);
+  color: var(--nblack);
 }
+
 .accordion button[aria-expanded='true'] .icon::after {
   width: 0;
 }
-.accordion button[aria-expanded='true'] + .accordion-content {
+
+.accordion button[aria-expanded='true']+.accordion-content {
   opacity: 1;
-  max-height: 9em;
+  max-height: 25rem;
   transition: all 200ms linear;
   will-change: opacity, max-height;
 }
+
 .accordion .accordion-content {
   opacity: 0;
   max-height: 0;
@@ -694,6 +707,7 @@ section#hero {
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
 }
+
 .accordion .accordion-content p {
   font-size: 1rem;
   font-weight: 300;
