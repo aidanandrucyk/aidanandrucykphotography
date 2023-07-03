@@ -8,6 +8,7 @@ html {
   --nwhiteaccent: hsl(0, 0%, 92%);
   --textcolor: hsl(48, 14%, 43%);
   --accentcolor: hsl(41, 68%, 83%);
+  --nblack:  hsl(60, 2%, 11%);
   --adoblue: #1a202c;
 }
 
@@ -22,7 +23,7 @@ body {
   background-color: var(--nwhite);
 }
 
-p{
+p {
   color: var(--textcolor);
 }
 
@@ -52,17 +53,18 @@ a:visited {
 
 /* HEADER */
 header {
+  z-index: 9999;
   position: fixed;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 5px 7.5%;
+  padding: 5px 6%;
   transition: .75s cubic-bezier(0.445, 0.05, 0.55, 0.95)
 }
 
 header.sticky {
-  padding: 5px 10%;
+  padding: 5px 5%;
   background: var(--nwhite);
   transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95)
 }
@@ -71,32 +73,30 @@ header.sticky li a {
   color: var(--textcolor);
   text-shadow: none;
   transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
-
 }
 
-header.sticky .logo a{
+header.sticky .logo a {
   color: var(--textcolor);
   text-shadow: none;
   transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
 }
 
-header.sticky .toggle_btn i{
+header.sticky .toggle_btn i {
   color: var(--textcolor);
   text-shadow: none;
   transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
 }
 
-header.sticky ul li a{
+header.sticky ul li a {
   color: var(--textcolor);
   text-shadow: none;
   transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
 }
 
-header.sticky .navbar li .dropdown{
+header.sticky .navbar li .dropdown {
   color: var(--textcolor);
   text-shadow: none;
   transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
-
 }
 
 header .logo {
@@ -109,7 +109,7 @@ header .logo {
   font-size: 1rem;
   text-transform: uppercase bold;
   transition: 0.6s;
-  
+
 }
 
 header ul {
@@ -118,18 +118,18 @@ header ul {
   justify-content: center;
 }
 
-.navbar ul li a{
+.navbar ul li a {
   color: var(--nwhite);
   text-shadow: 1px 1px 1px var(--textcolor);
 }
 
-.navbar ul li .dropdown{
+.navbar ul li .dropdown {
   font-size: 1.25rem;
   color: var(--nwhite);
   text-shadow: 1px 1px 1px var(--textcolor);
 }
 
-.navbar ul li .dropdown .dropdown-content a{
+.navbar ul li .dropdown .dropdown-content a {
   font-size: 1.25rem;
   color: var(--textcolor);
   text-shadow: none;
@@ -151,15 +151,18 @@ header ul {
   font-weight: bold;
   color: var(--nwhite);
   letter-spacing: 1px;
+  z-index: 901;
 }
 
 .navbar .links {
   display: flex;
   gap: 2rem;
+  z-index: 902;
 }
 
 .navbar .links a {
   font-size: 1.25rem;
+  z-index: 905;
 }
 
 .navbar .toggle_btn {
@@ -167,6 +170,8 @@ header ul {
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
+  z-index: 906;
+
 }
 
 .action_btn {
@@ -208,15 +213,16 @@ header ul {
   font-size: 1.5rem;
   background-color: inherit;
   font-family: inherit;
-  margin: 0; 
+  margin: 0;
   z-index: 1000;
 }
 
-.dropdown .dropdown-content a{
-    font-size: 1.25rem;
-  }  
+.dropdown .dropdown-content a {
+  font-size: 1.25rem;
+}
 
-.navbar a:hover, .dropdown:hover a{
+.navbar a:hover,
+.dropdown:hover a {
   font-weight: 300;
 }
 
@@ -226,7 +232,7 @@ header ul {
   position: absolute;
   background-color: var(--nwhiteaccent);
   min-width: 160px;
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Links inside the dropdown */
@@ -253,8 +259,6 @@ header ul {
 .dropdown:click .dropdown-content {
   display: block;
 }
-
-
 
 /* DROWPDOWN MENU */
 .dropdown_menu {
@@ -305,7 +309,6 @@ header ul {
   justify-content: center;
 }
 
-
 /* HERO */
 #hero {
   background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../Assets/img/DSC09093.jpg);
@@ -329,68 +332,84 @@ section#hero {
   margin-bottom: 1rem;
   color: var(--nwhiteaccent);
   text-shadow: 1px 1px 2px var(--accentcolor);
-  
 }
 
 #hero p {
   font-size: 1.25rem;
   color: var(--nwhite);
   text-shadow: 1px 1px 2px var(--accentcolor);
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid var(--accentcolor); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid var(--accentcolor);
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
     typing 10s steps(45, end),
-    blink-caret 2s step-end infinite;  
+    blink-caret 2s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
+  from {
+    width: 0%
+  }
+
+  to {
+    width: 75%
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: var(--accentcolor) }
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: var(--accentcolor)
+  }
 }
 
 /* BODY */
-.body{
-  padding: 5% 10%;
+.body {
+  padding: 2.5% 5%;
 }
-
 
 /* ABOUT */
-.about_container{
+.about_container {
   width: 100%;
+
 }
 
-.imageSection{
+.imageSection {
   grid-area: imageSect;
 }
 
-.infoSection{
+.infoSection {
   grid-area: infoSect;
 }
 
-.about_container .about_contents{
+.about_container .about_contents {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-gap: 5%;
   grid-template-areas: 'imageSect infoSect';
 }
 
-.about_contents .imageSection{
+.about_contents .imageSection {
   position: relative;
   max-width: 512px;
   height: auto;
 }
 
-.imageSection img{
+.imageSection img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -398,18 +417,18 @@ section#hero {
   z-index: -1000;
 }
 
-.about_contents .imageSection::after{
+.about_contents .imageSection::after {
   position: absolute;
   content: '';
   width: 100%;
-   height: 100%;
-   outline: 3px solid var(--accentcolor);
-   top: 10px;
-   left: 10px;
+  height: 100%;
+  outline: 3px solid var(--accentcolor);
+  top: 10px;
+  left: 10px;
   z-index: -1002;
 }
 
-.infoSection h1{
+.infoSection h1 {
   color: var(--textcolor);
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -419,7 +438,7 @@ section#hero {
   z-index: -1003;
 }
 
-.infoSection h2{
+.infoSection h2 {
   font-size: 1.25rem;
   color: var(--textcolor);
   padding: 5% 0%;
@@ -429,15 +448,15 @@ section#hero {
 
 }
 
-.infoSection h2 .extra{
+.infoSection h2 .extra {
   font-weight: 800;
 }
 
 .personal_info {
-  padding: 5% 0%;
+  padding: 1% 0%;
 }
 
-.personal_info hr{
+.personal_info hr {
   display: none;
   margin: 5% 0%;
   height: 3px;
@@ -445,12 +464,12 @@ section#hero {
   border: none;
 }
 
-.personal_info p{
+.personal_info p {
   padding: 1% 0;
   font-size: 1.25rem;
 }
 
-.personal_info ol li{
+.personal_info ol li {
   padding: 1%;
   color: var(--textcolor);
 }
@@ -465,42 +484,242 @@ section#hero {
 }
 
 @keyframes wave-animation {
-  0% { transform: rotate( 0.0deg) }
-  15% { transform: rotate(12.0deg) }  
-  30% { transform: rotate(-6.0deg) }
-  40% { transform: rotate(14.0deg) }
-  50% { transform: rotate(-7.0deg) }
-  60% { transform: rotate(8.0deg) }
-  70% { transform: rotate( -4.0deg) }  
-  80% { transform: rotate( 0.0deg) }  
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  15% {
+    transform: rotate(12.0deg)
+  }
+
+  30% {
+    transform: rotate(-6.0deg)
+  }
+
+  40% {
+    transform: rotate(14.0deg)
+  }
+
+  50% {
+    transform: rotate(-7.0deg)
+  }
+
+  60% {
+    transform: rotate(8.0deg)
+  }
+
+  70% {
+    transform: rotate(-4.0deg)
+  }
+
+  80% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
+  }
 }
-/*
-#about {
-  background-image: linear-gradient(rgba(0, 0,0, 0.25), rgba(0, 0,0, 0.25)), url('../Assets/img/aboutbackground.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 80% 20%;
+
+/* PORTFOLIO CARDS */
+#portfolio_cards {
+  display: grid;
+  place-items: center center;
+  padding: 15% 5%;
 }
-*/
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,
+      minmax(150px, 1fr));
+  padding: 2.5% 2.5% 0 0;
+  grid-gap: 1% 2%;
+}
+
+.card {
+  background-color: var(--nwhiteaccent);
+  max-width: fit-content;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  transition: .5s;
+}
+
+.container {
+  position: relative;
+  clip-path: polygon(0, 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+
+.container:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: .5;
+  z-index: -855;
+}
+
+.card1 .container:after {
+  background-image: linear-gradient(135deg, var(--accentcolor), var(--nwhiteaccent));
+}
+
+.card2 .container:after {
+  background-image: linear-gradient(135deg, var(--accentcolor), var(--nwhiteaccent));
+}
+
+.card3 .container:after {
+  background-image: linear-gradient(135deg, var(--accentcolor), var(--nwhiteaccent));
+}
+
+.details {
+  padding: 5%;
+}
+
+.details h3 {
+  color: var(--textcolor);
+  font-weight: 800;
+  margin: 10px 0 15px 0;
+}
+
+.details p {
+  color: var(--textcolor);
+  font-weight: 200;
+}
+
+
+
+
+/* FAQ */
+
+.container_faq {
+  color: var(--textcolor);
+  display: flex;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid var(--accentcolor);
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid var(--accentcolor);
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 2.5%;
+  color: var(--textcolor);
+  font-size: 1.25rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: var(--nblack);
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: var(--nblack);
+  border: 1px solid var(--nblack);
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color:var(--nblack);
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2.5% 2.5% 5% 2.5%;
+}
+
+
 
 
 /* FOOTER */
-footer{
-  padding: 5% 10%;
+footer {
+  padding: 5% 5%;
 
 }
+
 footer p {
   font-size: x-small;
   color: var(--textcolor);
 }
 
-footer p a{
+footer p a {
   font-weight: bold;
 }
 
 
-/* RESPONSIVE NAVBAR */
+/* RESPONSIVE FEATURES */
 
 @media(max-width: 992px) {
 
@@ -522,24 +741,32 @@ footer p a{
   }
 
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 
-  .about_container .about_contents{
+  .about_container .about_contents {
     grid-template-areas: 'imageSect imageSect'
-                          'infoSect infoSect';
+      'infoSect infoSect';
   }
-  
+
 }
 
 @media (max-width: 576px) {
   .dropdown_menu {
     width: 100%;
   }
+
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
-  .personal_info hr{
+
+  .personal_info hr {
     display: block;
+  }
+
+  #portfolio_cards .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 }
