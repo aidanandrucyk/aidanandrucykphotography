@@ -8,7 +8,7 @@ html {
   --nwhiteaccent: hsl(0, 0%, 92%);
   --textcolor: hsl(48, 14%, 43%);
   --accentcolor: hsl(41, 68%, 83%);
-  --nblack: hsl(60, 2%, 11%);
+  --nblack: hsl(50, 7%, 17%);
   --adoblue: #1a202c;
 }
 
@@ -24,7 +24,13 @@ body {
 }
 
 .body_header{
-  padding: 5% 0% 2.5% 0%;
+  padding: 4% 0% 2% 0%;
+  text-transform:uppercase;
+  font-size: 1.78rem;
+  text-align: center;
+  font-weight: 900;
+  font-stretch: expanded;
+  color: var(--nblack);
 }
 
 p {
@@ -58,6 +64,8 @@ a:visited {
 /* HEADER */
 header {
   z-index: 9999;
+  text-transform: uppercase;
+  transform: scale(1, 1.025);
   position: fixed;
   top: 0;
   width: 100%;
@@ -315,7 +323,8 @@ header ul {
 
 /* HERO */
 #hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../Assets/img/DSC09093.jpg);
+  background-image: linear-gradient(rgba(26, 25, 24, 0.25),rgba(26, 25, 24, .5)), url(../Assets/img/DSC09093.jpg);
+  filter:contrast(.8);
   background-size: cover;
   background-position: 80% 20%;
 }
@@ -398,6 +407,7 @@ section#hero {
 
 .infoSection {
   grid-area: infoSect;
+  padding: 10%;
 }
 
 .about_container .about_contents {
@@ -434,7 +444,7 @@ section#hero {
 
 .infoSection h1 {
   color: var(--textcolor);
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   display: inline-block;
   margin: 2.5% 0px;
@@ -443,12 +453,12 @@ section#hero {
 }
 
 .infoSection h2 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--textcolor);
   padding: 5% 0%;
   text-transform: capitalize;
   letter-spacing: 1px;
-  font-weight: 200;
+  font-weight: 50;
 
 }
 
@@ -457,7 +467,7 @@ section#hero {
 }
 
 .personal_info {
-  padding: 1% 0%;
+  padding: 5% 0%;
 }
 
 .personal_info hr {
@@ -469,12 +479,20 @@ section#hero {
 }
 
 .personal_info p {
-  padding: 1% 0;
+  padding: 1% 0 2% 0;
   font-size: 1.25rem;
 }
 
+.personal_info b {
+  color: var(--nblack);
+}
+
+.personal_info ol {
+  padding-top: 0;
+}
+
 .personal_info ol li {
-  padding: 1%;
+  padding: .5% 0;
   color: var(--textcolor);
 }
 
@@ -529,14 +547,13 @@ section#hero {
 #portfolio_cards {
   display: grid;
   place-items: center center;
-  padding: 15% 5%;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit,
       minmax(150px, 1fr));
-  padding: 2.5% 2.5% 0 0;
+  padding: 2.5% 0 0 0;
   grid-gap: 1% 2%;
 }
 
@@ -576,24 +593,12 @@ section#hero {
   z-index: -855;
 }
 
-.card1 .container:after {
-  background-image: linear-gradient(135deg, var(--accentcolor), var(--nwhiteaccent));
-}
-
-.card2 .container:after {
-  background-image: linear-gradient(135deg, var(--accentcolor), var(--nwhiteaccent));
-}
-
-.card3 .container:after {
-  background-image: linear-gradient(135deg, var(--accentcolor), var(--nwhiteaccent));
-}
-
 .details {
   padding: 5%;
 }
 
 .details h3 {
-  color: var(--textcolor);
+  color: var(--nblack);
   font-weight: 800;
   margin: 10px 0 15px 0;
 }
@@ -601,6 +606,17 @@ section#hero {
 .details p {
   color: var(--textcolor);
   font-weight: 200;
+}
+
+.details i {
+  color: var(--nwhiteaccent);
+  display: block;
+  text-align: bottom;
+}
+
+.card:hover .details i {
+  color: var(--nblack);
+  transition: .5s;
 }
 
 /* TESTIMONIALS */
@@ -660,6 +676,7 @@ section#hero {
 .active,
 .dot:hover {
   background-color: var(--textcolor);
+  transition: .5s;
 }
 
 q {
@@ -688,8 +705,8 @@ q {
   border: 20px;
   border-radius: 20px;
   margin: 5% 0;
-  width: 90%;
-  min-height: 20%;
+  width: 12rem;
+  height: 5rem;
   background-color: var(--nwhiteaccent);
   border-color: var(--textcolor);
 }
@@ -824,25 +841,26 @@ q {
 
 iframe {
   width: 100%;
-  height: 2450px;
-
+  height: 1875px;
   border: 0;
   margin: 0;
 }
 
 /* FOOTER */
 footer {
-  padding: 5% 5%;
-
+  padding: 2.5% 5%;
+  text-align: center;
 }
 
 footer p {
   font-size: x-small;
   color: var(--textcolor);
+  padding: .25% 0;
 }
 
 footer p a {
   font-weight: bold;
+  font-size: 1.18rem;
 }
 
 
@@ -876,6 +894,10 @@ footer p a {
       'infoSect infoSect';
   }
 
+  iframe {
+    height: 2050px;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -895,5 +917,9 @@ footer p a {
     width: 100%;
     display: block;
     margin-bottom: 20px;
+  }
+
+  iframe {
+    height: 2355px;
   }
 }
