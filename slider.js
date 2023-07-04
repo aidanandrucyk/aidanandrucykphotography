@@ -38,4 +38,4 @@ $(document).ready(function (){
       $('html').addClass('has-flexslider');
       $(this).flexslider(sliderSettings);
     });
-    $(window).delay(1000).trigger('resize');
+    $(window).delay(1000).trigger('resize');}})

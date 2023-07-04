@@ -82,7 +82,7 @@
    </section>
 
    <section class="body" id="about">
-      <h1>About Me:</h1>
+      <h1 class="body_header">About Me:</h1>
 
       <div class="about_container">
          <div class="about_contents">
@@ -155,7 +155,7 @@
    </section>
 
    <section class="body" id="portfolio_cards">
-      <h1>Portfolio:</h1>
+      <h1 class="body_header">Portfolio:</h1>
       <div class="cards">
          <div class="card card1">
             <a href="google.com">
@@ -227,13 +227,52 @@
    </section>
 
    <section class="body" id="testimonial_rec">
-      <h1>Testimonials:</h1>
-      <img src="" alt="">
+      <h1 class="body_header">Testimonials:</h1>
+      <div class="slideshow-container">
 
+         <!-- Full-width slides/quotes -->
+         <div class="mySlides">
+            <q>These are STUNNING Ahhh I'm so in love 💕. The pictures came out beautiful 😍🥺🥺. Thank you so much for
+               everything. We're so happy to have worked with you and would love to work with you again! I really
+               appreciate how natural these pictures came out. Daiyan and I really wanted to capture our authentic
+               reactions and just glimpses of the moment with an emphasis on the nature, and you captured everything we
+               asked for so perfectly!!! Also, the goat pictures are sooo cute 🥰</q>
+            <p class="author">- Umama & Daiyan</p>
+         </div>
+
+         <div class="mySlides">
+            <q>OMG TYSM THE PHOTOS ARE AMAZING! TYSM UR AWESOME THEY'RE AMAZING OMFG TYSM. Also, I’m giving ur # to my
+               friend idk if ur taking more grad pics after graduation but everyone is obsessed with ur work! I didn’t
+               do anything king they all love ur work!! Everyone’s asking for you!</q>
+            <p class="author">- Christina Girard (2x Client)</p>
+         </div>
+
+         <div class="mySlides">
+            <q>We are overjoyed by how beautiful the photos turned out. Thank you so much for capturing these moments
+               and being a part of our celebration! Thank you for capturing our special day. We appreciate you going the
+               extra mile as well as coming through with the quick turn around. You’ve become a family name and we will
+               definitely be recommending you moving forward 💕</q>
+            <p class="author">- Nafisa & Sydul</p>
+         </div>
+
+         <!-- Next/prev buttons -->
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- Dots/bullets/indicators -->
+      <div class="dot-container">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <div class="testimonial_btn">
+      <a class="button_link" href="https://aidanmaphotography.mypixieset.com/"><button class="see_more">See more testimonials!</button></a>
+   </div>
    </section>
 
    <section class="body" id="FAQ">
-      <h1>Frequently Asked Questions:</h1>
+      <h1 class="body_header">Frequently Asked Questions:</h1>
       <div class=“container_faq faq”>
          <div class="accordion">
             <div class="accordion-item">
@@ -316,10 +355,9 @@
    </section>
 
    <section class="body" id="Contact">
-      <h1>Contact:</h1>
-
-      <img src="" alt="">
-
+      <h1 class="body_header">Contact:</h1>
+      <iframe class="form"
+         src="https://docs.google.com/forms/d/e/1FAIpQLSdFtN6Pu4SdWnTEtK-t6zeMH19a3QTf42jchqe2R-4Vyb9gsQ/viewform?embedded=true"></iframe>
    </section>
 
 
@@ -327,6 +365,7 @@
 
    <!--SCRIPTS-->
    <script src="scripts/faq.js"></script>
+   <script src="scripts/testimonial.js"></script>
 
    <script type="text/javascript">
       window.addEventListener("scroll", function () {
@@ -359,11 +398,16 @@
 
    </script>
 
-
-
-
-
-
+   <script type="application/javascript">
+      var loadCounter = 0;
+      var loaded = function () {
+         loadCounter += 1;
+         if (loadCounter === 2) {
+            $("iframe").attr("height", "500px");
+            $(window).scrollTo(315, 0)
+         }
+      }
+   </script>
 
 </body>
 
