@@ -173,7 +173,7 @@ header ul {
 }
 
 .navbar .links a {
-  font-size: 1.25rem;
+  font-size: 1.20rem;
   z-index: 905;
 }
 
@@ -565,8 +565,9 @@ section#hero {
 }
 
 .card:hover {
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
-  transition: .5s;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  filter: saturate(0.01);
+  transition: ease .33s;
 }
 
 .container {
@@ -616,7 +617,7 @@ section#hero {
 
 .card:hover .details i {
   color: var(--nblack);
-  transition: .5s;
+  transition: ease .5s;
 }
 
 /* TESTIMONIALS */
@@ -697,24 +698,26 @@ q {
 }
 
 .testimonial_btn{
-
+  text-align: center;
 }
 
 .see_more{
-  text-align: center;
   border: 20px;
   border-radius: 20px;
   margin: 5% 0;
-  width: 12rem;
-  height: 5rem;
+  width: 15rem;
+  min-height: 5rem;
+  font-weight: 600;
   background-color: var(--nwhiteaccent);
-  border-color: var(--textcolor);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+
 }
 
 .see_more:hover {
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
   scale: 105%;
   transition: .5s;
+  filter: blur(1.05);
 }
 
 
@@ -852,6 +855,31 @@ footer {
   text-align: center;
 }
 
+.back_to_top_container{
+  text-align: center;
+  padding: 2.5%;
+}
+
+.backToTop {
+  padding: 2%;
+  font-weight: 400;
+
+  border: 1px solid var(--textcolor);
+  border-radius: 20px;
+  background-color: var(--nwhiteaccent);
+}
+
+.backToTop:hover {
+  background-color: var(--accentcolor);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.backToTop:hover i {
+  scale: 1.1 2;
+  transition: .5s linear;
+}
+
 footer p {
   font-size: x-small;
   color: var(--textcolor);
@@ -862,6 +890,8 @@ footer p a {
   font-weight: bold;
   font-size: 1.18rem;
 }
+
+
 
 
 /* RESPONSIVE FEATURES */
