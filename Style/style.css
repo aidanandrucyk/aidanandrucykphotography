@@ -33,7 +33,7 @@ body {
   color: var(--nblack);
 }
 
-.body h3{
+.body h3 {
   text-align: center;
   font-weight: 500;
   color: var(--textcolor);
@@ -51,8 +51,6 @@ li {
 a {
   text-decoration: none;
   color: var(--textcolor);
-  font-size: 1rem;
-  font-weight: 900;
 }
 
 a:hover {
@@ -124,6 +122,13 @@ header.sticky .navbar li .dropdown {
   transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
 }
 
+header.sticky .nav_dropdown i {
+  font-size: 1rem;
+  color: var(--textcolor);
+  transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
+
+}
+
 header .logo {
   position: relative;
   font-weight: 700;
@@ -145,6 +150,8 @@ header ul {
 
 .navbar ul li a {
   color: var(--nwhite);
+  text-decoration: none;
+  font-weight: 400;
   text-shadow: 1px 1px 1px var(--textcolor);
 }
 
@@ -196,11 +203,11 @@ header ul {
   cursor: pointer;
   display: none;
   z-index: 906;
-
 }
 
-.links .nav_dropdown i{
+.links .nav_dropdown i {
   font-size: 1rem;
+  font-size: 100;
   color: var(--nwhite);
 }
 
@@ -217,7 +224,7 @@ header ul {
 
 .action_btn:hover {
   scale: 1.05;
-  -webkit-filter:saturate(1.25);
+  -webkit-filter: saturate(1.25);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -251,7 +258,7 @@ header ul {
 
 .navbar a:hover,
 .dropdown:hover a {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* Dropdown content (hidden by default) */
@@ -412,7 +419,6 @@ section#hero {
 /* ABOUT */
 .about_container {
   width: 100%;
-
 }
 
 .imageSection {
@@ -508,6 +514,14 @@ section#hero {
 .personal_info ol li {
   padding: .5% 0;
   color: var(--textcolor);
+}
+
+.personal_info a{
+  font-weight: 900;
+}
+
+.personal_info a:hover{
+  color: var(--nblack);
 }
 
 /* WAVING HANDS */
@@ -637,11 +651,10 @@ section#hero {
 }
 
 /* TESTIMONIALS */
-.testimonial_bubble{
+.testimonial_bubble {
   background-color: var(--nwhiteaccent);
   border-radius: 20px;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-
 }
 
 .slideshow-container {
@@ -650,7 +663,7 @@ section#hero {
 
 .mySlides {
   display: none;
-  padding: 10% 10% 5% 10%;
+  padding: 5% 10% 2% 10%;
   text-align: center;
 }
 
@@ -683,7 +696,7 @@ section#hero {
 
 .dot-container {
   text-align: center;
-  padding: 10px;
+  padding: 0%;
 }
 
 .dot {
@@ -717,7 +730,6 @@ q {
 
 .button_link {
   text-align: center;
-
 }
 
 .testimonial_btn {
@@ -727,21 +739,20 @@ q {
 .see_more {
   border: 20px;
   border-radius: 20px;
-  margin: 5% 0;
+  margin: 2.5% 0 5% 0;
   width: 15rem;
   min-height: 5rem;
   font-weight: 600;
   background-color: var(--accentcolor);
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .see_more:hover {
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
   transition: .25s;
 }
 
-.see_more a button{
+.see_more a button {
   color: var(--nblack);
 }
 
@@ -842,6 +853,10 @@ q {
 .timeline_content p {
   color: var(--textcolor);
   margin: 1rem 0;
+}
+
+.timeline_content a{
+  font-weight: 900;
 }
 
 .timeline_content a:hover {
@@ -988,9 +1003,7 @@ footer {
   font-weight: 400;
 }
 
-.backToTop:hover {
-
-}
+.backToTop:hover {}
 
 .backToTop:hover i {
   scale: 1.1 1.25;
@@ -1095,10 +1108,16 @@ footer p a {
     display: block;
   }
 
+  #portfolio_cards {
+    display: grid;
+    place-items: center center;
+    padding: 0 5% 10% 5%;
+  }
+
   #portfolio_cards .column {
     width: 100%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   iframe {
