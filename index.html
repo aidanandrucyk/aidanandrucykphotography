@@ -28,7 +28,7 @@
    <header>
       <div class="navbar">
          <div class="logo">
-            <a href="#" class="">Aidan Andrucyk Photography</a>
+            <a id="logo_text" href="#" class="">Aidan Andrucyk Photography</a>
          </div>
          <ul class="links">
             <li class="About"><a href="index.html#about">About</a></li>
@@ -432,39 +432,9 @@
    
 
    <!--SCRIPTS-->
+   <script src="scripts/header.js"></script>
    <script src="scripts/faq.js"></script>
    <script src="scripts/testimonial.js"></script>
-
-   <script type="text/javascript">
-      window.addEventListener("scroll", function () {
-         var header = document.querySelector("header");
-         header.classList.toggle("sticky", window.scrollY > 0);
-      })
-   </script>
-
-   <script>
-      const toggleBtn = document.querySelector('.toggle_btn')
-      const toggleBtnIcon = document.querySelector('.toggle_btn i')
-      const dropDownMenu = document.querySelector('.dropdown_menu')
-
-      toggleBtn.onclick = function () {
-         dropDownMenu.classList.toggle('open')
-         toggleBtnIcon.classList = dropDownMenu.classList.contains('open')
-            ? "fa-solid fa-xmark"
-            : "fa-solid fa-bars"
-      }
-
-      document.onclick = function (e) {
-
-         if (e.target.classList == 'drop_link') {
-            toggleBtnIcon.classList = dropDownMenu.classList.contains('open')
-               ? "fa-solid fa-bars"
-               : "fa-solid fa-xmark"
-            dropDownMenu.classList.remove('open')
-         }
-      }
-
-   </script>
 
    <script type="application/javascript">
       var loadCounter = 0;

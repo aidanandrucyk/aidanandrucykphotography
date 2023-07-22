@@ -4,10 +4,10 @@ html {
 }
 
 :root {
-  --nwhite: hsl(60, 31%, 94%);
+  --nwhite: #f4f4eb;
   --nwhiteaccent: hsl(40, 18%, 97%);
-  --textcolor: hsl(48, 14%, 43%);
-  --accentcolor: hsl(41, 68%, 83%);
+  --textcolor: #7d775e;
+  --accentcolor: #f1deb6;
   --nblack: hsl(50, 7%, 17%);
   --adoblue: #1a202c;
 }
@@ -84,6 +84,10 @@ header {
   justify-content: space-between;
   padding: 5px 6%;
   transition: .75s cubic-bezier(0.445, 0.05, 0.55, 0.95)
+}
+
+header.top .logo a {
+    color: var(--nwhite);
 }
 
 header.sticky {
@@ -322,7 +326,6 @@ header ul {
 .dropdown_menu.open .main .section #hero {
   background-color: var(--accentcolor);
   background-image: none;
-
 }
 
 .dropdown_menu li {
@@ -730,6 +733,10 @@ q {
 
 .button_link {
   text-align: center;
+}
+
+.button_link button {
+  color: var(--nblack);
 }
 
 .testimonial_btn {
