@@ -160,13 +160,12 @@ header ul {
 }
 
 .navbar ul li .dropdown {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--nwhite);
   text-shadow: 1px 1px 1px var(--textcolor);
 }
 
 .navbar ul li .dropdown .dropdown-content a {
-  font-size: 1.1rem;
   color: var(--textcolor);
   text-shadow: none;
 }
@@ -243,17 +242,18 @@ header ul {
 
 /* PORTFOLIO DROPDOWN */
 
-.dropdown {
-  float: left;
-  overflow: hidden;
+#hero_port_text{
+  padding: 100px 0;
 }
 
 .dropdown {
+  float: left;
+  overflow: hidden;
   border: none;
   color: var(--textcolor);
   font-size: 1.5rem;
   background-color: inherit;
-  z-index: 1000;
+  transition: .1s;
 }
 
 .dropdown .dropdown-content a {
@@ -270,19 +270,19 @@ header ul {
   display: none;
   position: absolute;
   background-color: var(--nwhiteaccent);
-  min-width: 160px;
+  min-width: fit-content;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: black;
   padding: 1rem 2.5rem;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 .dropdown-content a:hover {
