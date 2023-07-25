@@ -11,6 +11,11 @@
 
    <link href="https://em-content.zobj.net/thumbs/240/microsoft/319/statue-of-liberty_1f5fd.png" rel="icon">
 
+   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
    <link href="Style\style.css" rel="stylesheet">
    <!-- Vendor CSS Files -->
    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -20,51 +25,56 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
    -->
 
+   <!--Can delete-->
+   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <body>
    <header>
-      <div class="navbar">
+      <div class="navbar-custom">
          <div class="logo">
             <a id="logo_text" href="#" class="">Aidan Andrucyk Photography</a>
          </div>
          <ul class="links">
             <li class="About"><a href="index.html#about">About</a></li>
-            <div class="nav_dropdown">
-            <li>
-               <div class="dropdown">                  
-                  <a id="hero_port_text" href="#portfolio_cards">Portfolio</a>
-                  <i class="fa fa-angle-down"></i>
-                  <div class="dropdown-content">
-                     <a class='drop_link' href="#">Wedding</a>
-                     <a class='drop_link' href="#">Event</a>
-                     <a class='drop_link' href="#">Portraits</a>
-                     <a class='drop_link' href="#">Graduation</a>
-                     <a class='drop_link' href="#">Street</a>
-                     <a class='drop_link' href="#">Film</a>
+            <div class="nav_dropdown-custom">
+               <li>
+                  <div class="dropdown-custom">
+                     <a id="hero_port_text" href="#portfolio_cards">Portfolio</a>
+                     <i class="fa fa-angle-down"></i>
+                     <div class="dropdown-custom-content">
+                        <a class='drop_link' href="#">Wedding</a>
+                        <a class='drop_link' href="#">Event</a>
+                        <a class='drop_link' href="#">Portraits</a>
+                        <a class='drop_link' href="#">Graduation</a>
+                        <a class='drop_link' href="#">Street</a>
+                        <a class='drop_link' href="#">Film</a>
+                     </div>
                   </div>
-               </div>
-            </li>
-         </div>
+               </li>
+            </div>
             <li class="Hero"><a href="#testimonial_rec">Testimonials</a></li>
             <li class="Hero"><a href="#timeline">Next Steps</a></li>
             <li class="FAQ"><a href="#FAQ">FAQ</a></li>
          </ul>
-         <a href="#" class="action_btn">Contact</a>
+         <a href="#contact" class="action_btn">Contact</a>
          <div class="toggle_btn"><i class="fa-solid fa-bars"></i>
          </div>
       </div>
 
    </header>
 
-   <div class="dropdown_menu">
+   <div class="dropdown-custom_menu">
       <li><a class='drop_link' href="index.html#about">About</a></li>
       <li>
-         <div class="dropdown">Portfolio
+         <div class="dropdown-custom">Portfolio
             <i class="fa fa-angle-down"></i>
-            <div class="dropdown-content">
+            <div class="dropdown-custom-content">
                <a class='drop_link' href="#">Wedding</a>
                <a class='drop_link' href="#">Event</a>
                <a class='drop_link' href="#">Portraits</a>
@@ -80,28 +90,100 @@
       <li><a class='drop_link' href="#contact" class="action_btn">Contact</a></li>
    </div>
 
-   <section id="hero">
-      <h1>Capturing</h1>
-      <p>tears, love, and joy</p>
+   <section class="hero">
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+               aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+
+         <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+               <img src="/Assets/hero/1.jpg"
+                  id="hero-img1"
+                  class="d-block w-100 c-img" alt="Slide 1">
+               <div class="carousel-caption top-0 mt-4">
+                  <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+                  <p class="mt-2 fs-3 text-uppercase">Discover the hidden world</p>
+               </div>
+            </div>
+            <div class="carousel-item c-item">
+               <img src="Assets/hero/2.jpg"
+                  class="d-block w-100 c-img" alt="Slide 2">
+               <div class="carousel-caption top-0 mt-4">
+                  <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+                  <p class="text-uppercase fs-3 mt-2">The season has arrived</p>
+                  <p class="display-1 fw-bolder text-capitalize">3 available tours</p>
+               </div>
+            </div>
+            <div class="carousel-item c-item">
+               <img src="Assets/hero/3.jpg"
+                  class="d-block w-100 c-img" alt="Slide 3">
+               <div class="carousel-caption top-0 mt-4">
+                  <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+                  <p class="text-uppercase fs-3 mt-2">Destination activities</p>
+                  <p class="display-1 fw-bolder text-capitalize">Go glacier hiking</p>
+               </div>
+            </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+         </button>
+      </div>
    </section>
+
+
+   <!--
+   <section aria-label="Newest Photos">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1">
+          </li>
+          <li class="slide">
+            <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
+          </li>
+          <li class="slide">
+            <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
+          </li>
+        </ul>
+        <div class="dots" style="text-align:center">
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+       </div>
+      </div>
+    </section>
+    -->
+
 
    <section class="body" id="about">
       <h1 class="body_header">About Me:</h1>
 
       <div class="about_container">
-         <div class="about_contents">
+         <div class="about-content-boxes">
             <section class="imageSection">
-               <img src="Assets\img\Portrait-50e3b87a.png" alt="Profile picture">
+               <img src="Assets/img/Portrait-50e3b87a.png" alt="Profile picture">
             </section>
 
-            <section class="infoSection">
-               <h1>Hi, I'm Aidan <span class="waving-hand">👋</span> </h1>
+            <div class="infoSection">
+               <h2>Hi, I'm Aidan <span class="waving-hand">👋</span> </h2>
                <h2>I’M A <b class="extra">WEDDING, EVENT, & PORTRAIT PHOTOGRAPHER BASED IN NEW JERSEY</b> WHO ALSO MAKES
                   FREQUENT TRIPS TO THE NEW YORK CITY / LONG ISLAND AREA!
                </h2>
-            </section>
+            </div>
          </div>
          <div class="personal_info">
+            
             <hr>
             <p><b>Looking for a photographer who returns ALL photos and not just the edited ones? </b>
                <br>I can do that!
@@ -165,7 +247,7 @@
          <div class="card">
             <a href="google.com">
 
-               <div class="container">
+               <div class="card-container">
                   <img src="Assets/previews/DSC00300-7b94b505.jpg" alt="">
                </div>
                <div class="details">
@@ -179,7 +261,7 @@
          </div>
 
          <div class="card">
-            <div class="container">
+            <div class="card-container">
                <img src="Assets/previews/RUF05737-3ca0a173.jpg" alt="">
             </div>
             <div class="details">
@@ -190,7 +272,7 @@
             </div>
          </div>
          <div class="card card3">
-            <div class="container">
+            <div class="card-container">
                <img src="Assets/previews/RUF02710-9-1e82cba8.jpg" alt="">
             </div>
             <div class="details">
@@ -201,7 +283,7 @@
             </div>
          </div>
          <div class="card card1">
-            <div class="container">
+            <div class="card-container">
                <img src="Assets/previews/RUF06787-3-3013d137.jpg" alt="">
             </div>
             <div class="details">
@@ -212,7 +294,7 @@
             </div>
          </div>
          <div class="card card2">
-            <div class="container">
+            <div class="card-container">
                <img src="Assets/previews/RUF09655-5-3a54eb9e.jpg" alt="">
             </div>
             <div class="details">
@@ -223,7 +305,7 @@
             </div>
          </div>
          <div class="card card3">
-            <div class="container">
+            <div class="card-container">
                <img src="Assets/previews/000279610001.jpg" alt="">
             </div>
             <div class="details">
@@ -284,22 +366,22 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
          </div>
-         <div class="testimonial_btn">
-            <a class="button_link" href="https://aidanmaphotography.mypixieset.com/"><button class="see_more">See more
-                  testimonials!</button></a>
-         </div>
+      </div>
+      <div class="testimonial_btn">
+         <a class="button_link" href="https://aidanmaphotography.mypixieset.com/"><button class="see_more">See more
+               testimonials!</button></a>
       </div>
    </section>
 
    <section class="body" id="timeline">
       <h1 class="body_header">NEXT STEPS:</h1>
       <h3>(When booking for <em>most</em> weddings, events, and photo shoots)</H2>
-         <div class="timeline">
+         <div class="timeline-line">
             <div class="timeline_container left">
                <div class="timeline_content">
-                  <h2>1. Contact me!</h2>
+                  <h2>1. Get in touch with me!</h2>
                   <br>
-                  <a class="action_btn" href="#contact">Click to contact me</a>
+                  <a class="action_btn" href="#contact">Contact Me</a>
                   <p>Contact me via <a href="https://www.instagram.com/aidanma.photography/"
                         target="_blank">Instagram</a>, <a href="mailto:aidanmaphotography@gmail.com"
                         target="_blank">email</a>, or the <a href="#contact">contact form on my website!</a></p>
@@ -439,6 +521,9 @@
    <script src="scripts/header.js"></script>
    <script src="scripts/faq.js"></script>
    <script src="scripts/testimonial.js"></script>
+
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+   <script type="text/javascript" src="scripts/slider.js"></script>
 
    <script type="application/javascript">
       var loadCounter = 0;

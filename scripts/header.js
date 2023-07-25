@@ -1,7 +1,7 @@
 // select document items
 const toggleBtn = document.querySelector('.toggle_btn')
 const toggleBtnIcon = document.querySelector('.toggle_btn i')
-const dropDownMenu = document.querySelector('.dropdown_menu')
+const dropDownMenu = document.querySelector('.dropdown-custom_menu')
 const nbar = document.querySelector('header')
 const logo = document.querySelector('#logo_text')
 
