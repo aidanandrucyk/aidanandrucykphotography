@@ -374,14 +374,14 @@ section#hero {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.25rem;
   margin-bottom: 1rem;
   color: var(--nwhite);
   text-shadow: 1px 1px 2px var(--accentcolor);
 }
 
 .hero p {
-  font-size: 1rem;
+  font-size: .75rem;
   color: var(--nwhite);
   text-shadow: 1px 1px 2px var(--accentcolor);
   overflow: hidden;
@@ -395,16 +395,33 @@ section#hero {
   letter-spacing: .15em;
   /* Adjust as needed */
   animation:
-    typing 10s steps(45, end),
-    blink-caret 2s step-end infinite;
+    typing 5s steps(40, end),
+    blink-caret 2s step-end ;
+}
+
+#hero{
+  text-align: center;
+
+}
+
+.carousel{
+  vertical-align: middle;
+  text-align: center;
 }
 
 .carousel-inner{
   background-color: var(--nblack);
+  vertical-align: middle;
+  text-align: center;
+  transition:cubic-bezier(0.06, 1, 0.9, 0.045)
 }
 
 .carousel-caption{
-  padding-top: 20%;
+  padding-bottom: 5%;
+}
+
+.carousel-caption .display-1 {
+  size: 10rem;
 }
 
 #hero-img1{
@@ -1163,7 +1180,6 @@ footer p a {
   }
 
   .carousel-caption{
-    padding-top: 50vh;
   }
 
   .personal_info hr {
