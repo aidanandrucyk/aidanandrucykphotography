@@ -6,7 +6,7 @@ html {
 
 :root {
   --nwhite: #f4f4eb;
-  --nwhiteaccent: hsl(40, 18%, 97%);
+  --nwhiteaccent: rgb(249, 247, 246);
   --textcolor: #7d775e;
   --accentcolor: #f1deb6;
   --nblack: hsl(50, 7%, 17%);
@@ -31,7 +31,7 @@ body {
 .body-sect-header {
   padding: 3% 0% 2rem 0%;
   text-transform: uppercase;
-  font-size: 1.78rem;
+  font-size: 1.75rem;
   text-align: center;
   font-weight: 900;
   font-stretch: expanded;
@@ -275,6 +275,11 @@ header ul {
   font-weight: 400;
 }
 
+.nav_dropdown-custom .dropdown-custom-content a:hover {
+  background-color: var(--accentcolor);
+  transition: .1s;
+}
+
 /* dropdown-custom content (hidden by default) */
 .dropdown-custom-content {
   display: none;
@@ -296,7 +301,9 @@ header ul {
 }
 
 .dropdown-custom-content a:hover {
-  background-color: var(--accentcolor);
+  color: var(--textcolor);
+  text-emphasis: bold;
+  transition: .25s;
 }
 
 .dropdown-custom:hover .dropdown-custom-content {
@@ -395,8 +402,8 @@ section#hero {
   letter-spacing: .15em;
   /* Adjust as needed */
   animation:
-    typing 6s steps(40, end),
-    blink-caret 2s step-end ;
+    typing 7.5s steps(45, end),
+    blink-caret .75s step-end infinite;
 }
 
 #hero{
@@ -417,7 +424,7 @@ section#hero {
 }
 
 .carousel-caption{
-  padding-bottom: 5.5rem;
+  padding-bottom: 5rem;
 }
 
 .carousel-caption .display-1 {
@@ -425,7 +432,7 @@ section#hero {
 }
 
 .carousel-indicators{
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 #hero-img1{
@@ -440,7 +447,7 @@ section#hero {
   }
 
   to {
-    width: 75%
+    width: 30%
   }
 }
 
@@ -452,7 +459,7 @@ section#hero {
     border-color: transparent
   }
 
-  50% {
+  30% {
     border-color: var(--accentcolor)
   }
 }
@@ -521,6 +528,8 @@ section#hero {
   height: 100%;
   object-fit: cover;
   position: relative;
+  z-index: 1;
+
 }
 
 .about-content-boxes .imageSection::after {
@@ -531,7 +540,12 @@ section#hero {
   outline: 3px solid var(--accentcolor);
   top: 10px;
   left: 10px;
-  z-index: -1002;
+  z-index: 0;
+}
+
+.infoSection {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .infoSection h1 {
@@ -541,7 +555,6 @@ section#hero {
   display: inline-block;
   margin: 2.5% 0px;
   position: relative;
-  z-index: -1003;
 }
 
 .infoSection h2 {
@@ -560,6 +573,8 @@ section#hero {
 
 .personal_info {
   padding: 5% 0% 0% 0%;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .personal_info hr {
@@ -571,7 +586,7 @@ section#hero {
 }
 
 .personal_info p {
-  padding: 1% 0 2% 0;
+  padding: 1rem 0 1.25rem 0;
   font-size: 1.25rem;
 }
 
@@ -584,7 +599,7 @@ section#hero {
 }
 
 .personal_info ol li {
-  padding: .5% 0;
+  padding: .25% 0;
   color: var(--textcolor);
 }
 
@@ -600,7 +615,7 @@ section#hero {
 .waving-hand {
   animation-name: wave-animation;
   animation-duration: 2s;
-  animation-iteration-count: 10;
+  animation-iteration-count: 20;
   transform-origin: 60% 70%;
   display: inline-block;
 }
@@ -795,6 +810,8 @@ q {
   font-style: italic;
   font-size: 1rem;
   color: var(--textcolor);
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .author {
@@ -836,7 +853,6 @@ q {
 }
 
 /* TIMELINE */
-
 /* The actual timeline (the vertical ruler) */
 .timeline-line {
   position: relative;
@@ -1000,7 +1016,7 @@ iframe {
 }
 
 .accordion button .accordion-title {
-  padding: 1em 1.5em 1em 0;
+  padding: 1rem 3.5rem 1rem 0rem;
 }
 
 .accordion button .icon {
@@ -1120,14 +1136,49 @@ footer p a {
   object-fit: cover;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+/* FULL TESTIMONIALS PAGE */
+
+/* Style the container with a rounded border, grey background and some padding and margin */
+.ftestimonial-dcontainer {
+  display: grid;
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
 }
 
+/* Clear floats after containers */
+.ftestimonial-dcontainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.ftestimonial-dcontainer img {
+  float: left;
+  padding: .1rem 2rem 1rem 0rem;
+  max-width: 13rem;
+}
+
+/* Increase the font-size of a span element */
+.ftestimonial-dcontainer span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
 
 
 /* RESPONSIVE FEATURES */
@@ -1218,18 +1269,18 @@ footer p a {
   .hero p {
     animation:
       typing 3s steps(40, end),
-      blink-caret 2s step-end ;
+      blink-caret 2s step-end infinite;
   }
 
   .hero p {
     font-size: .25rem;
   }
   .carousel-caption{
-    padding-bottom: 4.5rem;
+    padding-bottom: 6rem;
   }
 
   .carousel-indicators{
-    padding-bottom: 2rem;
+    padding-bottom: 3.5rem;
   }
 
   .personal_info hr {
@@ -1254,5 +1305,11 @@ footer p a {
 
   .photo-gallery{
     flex-direction: column;
+    gap: 1.25rem;
+
+  }
+  
+  .gcolumn{
+    gap: 1.25rem;
   }
 }
