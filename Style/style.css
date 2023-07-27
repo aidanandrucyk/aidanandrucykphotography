@@ -395,7 +395,7 @@ section#hero {
   letter-spacing: .15em;
   /* Adjust as needed */
   animation:
-    typing 5s steps(40, end),
+    typing 6s steps(40, end),
     blink-caret 2s step-end ;
 }
 
@@ -417,11 +417,15 @@ section#hero {
 }
 
 .carousel-caption{
-  padding-bottom: 5%;
+  padding-bottom: 5.5rem;
 }
 
 .carousel-caption .display-1 {
   size: 10rem;
+}
+
+.carousel-indicators{
+  padding-bottom: 2.5rem;
 }
 
 #hero-img1{
@@ -917,23 +921,23 @@ q {
 }
 
 /* The actual content */
-.timeline_content {
+.timeline-dcontent {
   padding: 2rem 1.5rem;
   background-color: var(--nwhiteaccent);
   position: relative;
   border-radius: 10px;
 }
 
-.timeline_content p {
+.timeline-dcontent p {
   color: var(--textcolor);
   margin: 1rem 0;
 }
 
-.timeline_content a{
+.timeline-dcontent a{
   font-weight: 900;
 }
 
-.timeline_content a:hover {
+.timeline-dcontent a:hover {
   color: var(--nblack);
 }
 
@@ -1072,14 +1076,12 @@ footer {
   padding: 2%;
 }
 
-.backToTop {
+.back-to-top-icon {
   padding: 2%;
   font-weight: 400;
 }
 
-.backToTop:hover {}
-
-.backToTop:hover i {
+.back-to-top-icon:hover i {
   scale: 1.1 1.25;
   transition: .25s linear;
 }
@@ -1093,6 +1095,36 @@ footer p {
 footer p a {
   font-weight: bold;
   font-size: 1.18rem;
+}
+
+/* PHOTO GALLERY */
+.photo-dcontainer{
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.photo-gallery{
+  display: flex;
+  gap: 1rem;
+}
+
+.gcolumn{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gphoto img{
+  width: 100%;
+  object-fit: cover;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 
 
@@ -1168,6 +1200,7 @@ footer p a {
 
 }
 
+/* Mobile Devices */
 @media (max-width: 576px) {
   .dropdown-custom_menu {
     width: 100%;
@@ -1179,10 +1212,24 @@ footer p a {
   }
 
   html {
-    font-size: 14px;
+    font-size: 13px;
   }
 
+  .hero p {
+    animation:
+      typing 3s steps(40, end),
+      blink-caret 2s step-end ;
+  }
+
+  .hero p {
+    font-size: .25rem;
+  }
   .carousel-caption{
+    padding-bottom: 4.5rem;
+  }
+
+  .carousel-indicators{
+    padding-bottom: 2rem;
   }
 
   .personal_info hr {
@@ -1203,5 +1250,9 @@ footer p a {
 
   iframe {
     height: 2355px;
+  }
+
+  .photo-gallery{
+    flex-direction: column;
   }
 }
