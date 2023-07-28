@@ -20,7 +20,9 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -45,7 +47,7 @@ body {
   padding-bottom: 3%;
 }
 
-.body h1{
+.body h1 {
   color: var(--nblack);
 }
 
@@ -106,7 +108,7 @@ header {
 }
 
 header.top .logo a {
-    color: var(--nwhite);
+  color: var(--nwhite);
 }
 
 header.sticky {
@@ -149,7 +151,6 @@ header.sticky .nav_dropdown-custom i {
   font-size: 1rem;
   color: var(--textcolor);
   transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
-
 }
 
 header .logo {
@@ -262,7 +263,7 @@ header ul {
 
 /* PORTFOLIO dropdown-custom */
 
-#hero_port_text{
+#hero_port_text {
   padding: 100px 0;
 }
 
@@ -416,24 +417,24 @@ section#hero {
     blink-caret .75s step-end infinite;
 }
 
-#hero{
+#hero {
   text-align: center;
 
 }
 
-.carousel{
+.carousel {
   vertical-align: middle;
   text-align: center;
 }
 
-.carousel-inner{
+.carousel-inner {
   background-color: var(--nblack);
   vertical-align: middle;
   text-align: center;
-  transition:cubic-bezier(0.06, 1, 0.9, 0.045)
+  transition: cubic-bezier(0.06, 1, 0.9, 0.045)
 }
 
-.carousel-caption{
+.carousel-caption {
   padding-bottom: 5rem;
 }
 
@@ -441,11 +442,11 @@ section#hero {
   size: 10rem;
 }
 
-.carousel-indicators{
+.carousel-indicators {
   padding-bottom: 2rem;
 }
 
-#hero-img1{
+#hero-img1 {
   background-position: 20% 80% 0 0;
 }
 
@@ -495,8 +496,13 @@ section#hero {
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 
@@ -613,11 +619,11 @@ section#hero {
   color: var(--textcolor);
 }
 
-.personal_info a{
+.personal_info a {
   font-weight: 900;
 }
 
-.personal_info a:hover{
+.personal_info a:hover {
   color: var(--nblack);
 }
 
@@ -963,7 +969,7 @@ q {
   margin: 1rem 0;
 }
 
-.timeline-dcontent a{
+.timeline-dcontent a {
   font-weight: 900;
 }
 
@@ -1120,7 +1126,7 @@ footer {
   transition: .25s linear;
 }
 
-.footer-bar{
+.footer-bar {
   margin: .5rem;
 }
 
@@ -1136,45 +1142,50 @@ footer p a {
   color: var(--nblack);
 }
 
+footer .fa-brands {
+color: black;
+}
+
+footer .fa-brands:hover {
+  color: var(--textcolor);
+  transition: .25s;
+  }
+
 /* PHOTO GALLERY */
-.photo-dcontainer{
+.photo-dcontainer {
   width: 90%;
   margin: auto;
   padding: 2rem 0;
 }
 
-.photo-gallery{
+.photo-gallery {
   display: flex;
   gap: 1rem;
 }
 
-.gcolumn{
+.gcolumn {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.gphoto img{
+.gphoto img {
   width: 100%;
   object-fit: cover;
 }
 
 /* FULL TESTIMONIALS PAGE */
-
-#full-testimonial{
+#full-testimonial {
   display: flex;
   gap: 1rem;
 }
 
 /* Style the container with a rounded border, grey background and some padding and margin */
 .ftestimonial-dcontainer {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   max-width: 100%;
   background-color: white;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 2rem;
   margin: 0;
 }
 
@@ -1185,30 +1196,52 @@ footer p a {
   display: table;
 }
 
-/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
-.ftestimonial-dcontainer img {
-  float: left;
-  padding: .1rem 2rem 1rem 0rem;
-  max-width: 20rem;
-}
-
 /* Increase the font-size of a span element */
 .ftestimonial-dcontainer span {
   font-size: 1.33rem;
   margin-right: 1rem;
 }
 
-/* Add media queries for responsiveness. This will center both the text and the image inside the container */
-@media (max-width: 500px) {
-  .ftestimonial-dcontainer {
-    text-align: center;
-  }
+.ftcolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
-  .ftestimonial-dcontainer img {
-    margin: auto;
-    float: none;
-    display: block;
-  }
+.ftestimonial {
+  width: 100%;
+  object-fit: cover;
+  text-align: justify;
+}
+
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.ftestimonial img {
+  float: left;
+  padding: 0rem 2rem 2rem 0rem;
+  max-width: 20rem;
+  overflow: hidden;
+}
+
+.emftestimonial-dcontainer {
+  padding: 0 25%;
+  text-align: justify;
+}
+
+.smtestestimonial {
+  border-left: 1px solid grey;
+  height: auto;
+  padding-left: 2rem;
+  margin: 4rem 2.5rem 1rem 2rem;
+}
+
+.even-more-ft q {
+  text-align: justify;
+}
+
+.emtestimonial-name{
+  text-align: center;
+  color: var(--nblack);
 }
 
 
@@ -1242,7 +1275,7 @@ footer p a {
       'infoSect infoSect';
   }
 
-  .timeline-line::after{
+  .timeline-line::after {
     left: 29px;
   }
 
@@ -1280,6 +1313,28 @@ footer p a {
     height: 2050px;
   }
 
+  .ftestimonial-dcontainer {
+    text-align: center;
+  }
+
+  .ftestimonial-dcontainer img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+
+  .ftestimonial-dcontainer span,
+  p {
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .even-more-ft {
+    display: block;
+  }
+
+
 }
 
 /* Mobile Devices */
@@ -1290,7 +1345,7 @@ footer p a {
 
   .dropdown-custom_menu.open li {
     text-align: justify;
-    padding: 7%;
+    padding: 6%;
   }
 
   html {
@@ -1306,11 +1361,12 @@ footer p a {
   .hero p {
     font-size: .25rem;
   }
-  .carousel-caption{
+
+  .carousel-caption {
     padding-bottom: 6rem;
   }
 
-  .carousel-indicators{
+  .carousel-indicators {
     padding-bottom: 3.5rem;
   }
 
@@ -1334,13 +1390,18 @@ footer p a {
     height: 2355px;
   }
 
-  .photo-gallery{
+  .photo-gallery {
     flex-direction: column;
     gap: 1.25rem;
 
   }
-  
-  .gcolumn{
+
+  .gcolumn {
     gap: 1.25rem;
   }
+
+  .emftestimonial-dcontainer {
+    padding: 0 5%;
+  }
+
 }
