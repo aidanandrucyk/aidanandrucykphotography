@@ -1,9 +1,9 @@
 // select document items
-const toggleBtn = document.querySelector('.toggle_btn')
-const toggleBtnIcon = document.querySelector('.toggle_btn i')
-const dropDownMenu = document.querySelector('.dropdown-custom_menu')
+const toggleBtn = document.querySelector('.toggle-btn')
+const toggleBtnIcon = document.querySelector('.toggle-btn i')
+const dropDownMenu = document.querySelector('.dropdown-custom-menu')
 const nbar = document.querySelector('header')
-const logo = document.querySelector('#logo_text')
+const logo = document.querySelector('#logo-text')
 
 const nwhite = "#f4f4eb";
 const textcolor = "#7d775e";
@@ -53,7 +53,7 @@ toggleBtn.onclick = function () {
 
 // Closes drop-down menu when clicking on a link 
 document.onclick = function (e) {
-   if (e.target.classList == 'drop_link') {
+   if (e.target.classList == 'drop-link') {
       toggleBtnIcon.classList = dropDownMenu.classList.contains('open')
          ? "fa-solid fa-bars"
          : "fa-solid fa-xmark"

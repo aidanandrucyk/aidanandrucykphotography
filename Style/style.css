@@ -129,7 +129,7 @@ header.sticky .logo a {
   transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
 }
 
-header.sticky .toggle_btn i {
+header.sticky .toggle-btn i {
   color: var(--textcolor);
   text-shadow: none;
   transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
@@ -147,7 +147,7 @@ header.sticky .navbar-custom li .dropdown-custom {
   transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
 }
 
-header.sticky .nav_dropdown-custom i {
+header.sticky .nav-dropdown-custom i {
   font-size: 1rem;
   color: var(--textcolor);
   transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
@@ -221,7 +221,7 @@ header ul {
   z-index: 905;
 }
 
-.navbar-custom .toggle_btn {
+.navbar-custom .toggle-btn {
   color: var(--nwhite);
   font-size: 1.5rem;
   cursor: pointer;
@@ -229,13 +229,13 @@ header ul {
   z-index: 906;
 }
 
-.links .nav_dropdown-custom i {
+.links .nav-dropdown-custom i {
   font-size: 1rem;
   font-size: 100;
   color: var(--nwhite);
 }
 
-.action_btn {
+.action-btn {
   background-color: var(--accentcolor);
   padding: .5rem 1rem;
   border: none;
@@ -246,7 +246,7 @@ header ul {
   transition: .5s;
 }
 
-.action_btn:hover {
+.action-btn:hover {
   scale: 1.05;
   -webkit-filter: saturate(1.25);
   -webkit-transition: all 1s ease;
@@ -257,13 +257,13 @@ header ul {
 
 }
 
-.action_btn:active {
+.action-btn:active {
   scale: .95;
 }
 
 /* PORTFOLIO dropdown-custom */
 
-#hero_port_text {
+#hero-port-text {
   padding: 100px 0;
 }
 
@@ -286,7 +286,7 @@ header ul {
   font-weight: 400;
 }
 
-.nav_dropdown-custom .dropdown-custom-content a:hover {
+.nav-dropdown-custom .dropdown-custom-content a:hover {
   background-color: var(--accentcolor);
   transition: .1s;
 }
@@ -326,7 +326,7 @@ header ul {
 }
 
 /* DROWPDOWN MENU */
-.dropdown-custom_menu {
+.dropdown-custom-menu {
   display: none;
   text-align: center;
   top: 75px;
@@ -339,35 +339,35 @@ header ul {
   z-index: 1000;
 }
 
-.dropdown-custom_menu.open {
+.dropdown-custom-menu.open {
   position: fixed;
   height: 100vh;
   padding: 5%;
   transition: height .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-.dropdown-custom_menu.open li {
+.dropdown-custom-menu.open li {
   text-align: justify;
   padding: 4%;
 }
 
-.dropdown-custom_menu.open .main .section #hero {
+.dropdown-custom-menu.open .main .section #hero {
   background-color: var(--accentcolor);
   background-image: none;
 }
 
-.dropdown-custom_menu li {
+.dropdown-custom-menu li {
   padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.dropdown-custom_menu li a {
+.dropdown-custom-menu li a {
   font-size: 1.5rem;
 }
 
-.dropdown-custom_menu .action-btn {
+.dropdown-custom-menu .action-btn {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -587,13 +587,13 @@ section#hero {
   font-weight: 800;
 }
 
-.personal_info {
+.personal-info {
   padding: 5% 0% 0% 0%;
   text-align: justify;
   text-justify: inter-word;
 }
 
-.personal_info hr {
+.personal-info hr {
   display: none;
   margin: 5% 0%;
   height: 3px;
@@ -601,29 +601,29 @@ section#hero {
   border: none;
 }
 
-.personal_info p {
+.personal-info p {
   padding: 1rem 0 1.25rem 0;
   font-size: 1.25rem;
 }
 
-.personal_info b {
+.personal-info b {
   color: var(--nblack);
 }
 
-.personal_info ol {
+.personal-info ol {
   padding-top: 0;
 }
 
-.personal_info ol li {
+.personal-info ol li {
   padding: .25% 0;
   color: var(--textcolor);
 }
 
-.personal_info a {
+.personal-info a {
   font-weight: 900;
 }
 
-.personal_info a:hover {
+.personal-info a:hover {
   color: var(--nblack);
 }
 
@@ -675,7 +675,7 @@ section#hero {
 }
 
 /* PORTFOLIO CARDS */
-#portfolio_cards {
+#portfolio-cards {
   display: grid;
   place-items: center center;
   padding: 0% 5%;
@@ -755,7 +755,7 @@ section#hero {
 
 /* TESTIMONIALS */
 
-.testimonial_bubble {
+.testimonial-bubble {
   background-color: var(--nwhiteaccent);
   border-radius: 20px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
@@ -844,7 +844,7 @@ q {
   color: var(--nblack);
 }
 
-.testimonial_btn {
+.testimonial-btn {
   text-align: center;
 }
 
@@ -995,7 +995,7 @@ iframe {
 
 /* FAQ */
 
-.container_faq {
+.container-faq {
   color: var(--textcolor);
   display: flex;
   min-height: 100vh;
@@ -1111,7 +1111,7 @@ footer {
   text-align: center;
 }
 
-.back_to_top-dcontainer {
+.back-to-top-dcontainer {
   text-align: center;
   padding: 2%;
 }
@@ -1250,19 +1250,19 @@ footer .fa-brands:hover {
 @media(max-width: 1079px) {
 
   .navbar-custom .links,
-  .navbar-custom .action_btn {
+  .navbar-custom .action-btn {
     display: none;
   }
 
-  .navbar-custom .toggle_btn {
+  .navbar-custom .toggle-btn {
     display: block;
   }
 
-  .dropdown-custom_menu {
+  .dropdown-custom-menu {
     display: block;
   }
 
-  .contact_btn {
+  .contact-btn {
     display: none;
   }
 
@@ -1339,11 +1339,11 @@ footer .fa-brands:hover {
 
 /* Mobile Devices */
 @media (max-width: 576px) {
-  .dropdown-custom_menu {
+  .dropdown-custom-menu {
     width: 100%;
   }
 
-  .dropdown-custom_menu.open li {
+  .dropdown-custom-menu.open li {
     text-align: justify;
     padding: 6%;
   }
@@ -1370,17 +1370,17 @@ footer .fa-brands:hover {
     padding-bottom: 3.5rem;
   }
 
-  .personal_info hr {
+  .personal-info hr {
     display: block;
   }
 
-  #portfolio_cards {
+  #portfolio-cards {
     display: grid;
     place-items: center center;
     padding: 0 5% 25% 5%;
   }
 
-  #portfolio_cards .column {
+  #portfolio-cards .column {
     width: 100%;
     display: block;
     margin-bottom: 25px;
