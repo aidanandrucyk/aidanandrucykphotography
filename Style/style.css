@@ -1203,7 +1203,8 @@ footer .fa-brands:hover {
 .subheading {
   text-align: center;
   color: var(--textcolor);
-  font-size: 1rem;
+  font-size: 1.25rem;
+  padding: 1% 20%;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -1247,13 +1248,16 @@ footer .fa-brands:hover {
   background-color: white;
   border-radius: 10px;
   padding: 2rem;
-  margin: 0;
+  margin: 0rem 15rem;
+  text-align: center;
 }
-
 
 .ftestimonial .serif{
   font-family: "Times New Roman", Times, serif;
   font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 1px;
+
 }
 
 /* Clear floats after containers */
@@ -1267,6 +1271,7 @@ footer .fa-brands:hover {
 .ftestimonial-dcontainer span {
   font-size: 1.5rem;
   margin-right: 1rem;
+  letter-spacing: 1px;
 }
 
 .ftcolumn {
@@ -1282,12 +1287,35 @@ footer .fa-brands:hover {
 }
 
 .ftestimonial img {
-  float: left;
+  float: center;
   padding: 0rem 2rem 2rem 0rem;
   max-width: 25rem;
   overflow: hidden;
-  border: 2px var(--accentcolor);
 }
+
+.ftestimonial p{
+  text-align: justify;
+  padding: 0% 20%;
+}
+
+
+.ftestimonial-dcontainer {
+  text-align: center;
+}
+
+.ftestimonial-dcontainer img {
+  margin: auto;
+  float: none;
+  display: block;
+}
+
+.ftestimonial-dcontainer span,
+p {
+  display: block;
+  text-align: center;
+  justify-content: space-between;
+}
+
 
 /* EVEN MORE TESTIMONIALS SECTION */
 
@@ -1387,28 +1415,14 @@ footer .fa-brands:hover {
   iframe {
     height: 2050px;
   }
-
   .ftestimonial-dcontainer {
-    text-align: center;
+    margin: 0rem;
   }
 
-  .ftestimonial-dcontainer img {
-    margin: auto;
-    float: none;
-    display: block;
+  .ftestimonial p{
+    text-align: justify;
+    padding: 0% 10%;
   }
-
-  .ftestimonial-dcontainer span,
-  p {
-    display: block;
-    text-align: center;
-    justify-content: space-between;
-  }
-
-  .even-more-ft {
-    display: block;
-  }
-
 
 }
 
