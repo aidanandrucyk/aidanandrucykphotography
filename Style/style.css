@@ -419,7 +419,7 @@ section#hero {
   letter-spacing: .15em;
   /* Adjust as needed */
   animation:
-    typing 7.5s steps(45, end),
+    typing 5.5s steps(45, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -1444,8 +1444,8 @@ p {
 
   .hero p {
     animation:
-      typing 3s steps(40, end),
-      blink-caret 2s step-end infinite;
+      typing 2s steps(20, end),
+      blink-caret 1.5s step-end infinite;
   }
 
   .hero p {
