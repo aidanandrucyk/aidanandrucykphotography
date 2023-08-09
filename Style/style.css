@@ -762,9 +762,8 @@ section#hero {
 /* TESTIMONIALS */
 
 .testimonial-bubble {
-  background-color: var(--nwhiteaccent);
   border-radius: 20px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  padding: 0% 15%;
 }
 
 
@@ -774,7 +773,7 @@ section#hero {
 
 .testmnl-slide {
   display: none;
-  padding: 5% 10% 2% 10%;
+  padding: 0% 10% 2% 10%;
   text-align: center;
 }
 
@@ -801,8 +800,7 @@ section#hero {
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.09);
-  color: white;
+  color: var(--nblack);
   transition: .35s;
 }
 
@@ -813,8 +811,8 @@ section#hero {
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 13px;
+  width: 13px;
   margin: 0 2px;
   background-color: lightgray;
   border-radius: 50%;
@@ -855,18 +853,20 @@ q {
 }
 
 .see-more-button {
-  border: 20px;
-  border-radius: 20px;
+  border-radius: 25px;
+  border: none;
   margin: 2.5% 0 1rem 0;
   width: 15rem;
   min-height: 5rem;
   font-weight: 600;
-  background-color: var(--nwhite);
+  background-color: var(--accentcolor);
 }
 
 .see-more-button:hover {
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
   transition: .25s;
+  background-color: var(--textcolor);
+  color: var(--accentcolor);
 }
 
 .see-more-button a button {
@@ -988,8 +988,14 @@ q {
   height: fit-content;
 }
 
+.Uc2NEf{
+  background-color: #1a202c;
+
+}
+
 .teQAzf {
   padding: 0%;
+  background-color: #1a202c;
 }
 
 iframe {
@@ -1275,15 +1281,15 @@ footer .fa-brands:hover {
   text-align: justify;
 }
 
-
 .ftestimonial img {
   float: left;
   padding: 0rem 2rem 2rem 0rem;
   max-width: 25rem;
   overflow: hidden;
-  border: 2px black;
+  border: 2px var(--accentcolor);
 }
 
+/* EVEN MORE TESTIMONIALS SECTION */
 
 .emftestimonial-dcontainer {
   padding: 0 25%;
@@ -1429,6 +1435,18 @@ footer .fa-brands:hover {
 
   .hero p {
     font-size: .25rem;
+  }
+
+  #hero1 img{
+    content: url('/Assets/hero/1v.jpg');
+  }
+
+  #hero3 img{
+    content: url('/Assets/hero/3v.jpg');
+  }
+
+  #hero4 img{
+    content: url('/Assets/hero/4v.jpg');
   }
 
   .carousel-caption {
