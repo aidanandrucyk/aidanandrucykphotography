@@ -1245,8 +1245,8 @@ footer .fa-brands:hover {
 }
 
 
-.ftestimonial p:not(span){
-  font-family: Georgia, serif;
+.ftestimonial .serif{
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.1rem;
 }
 
