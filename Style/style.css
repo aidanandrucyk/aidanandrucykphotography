@@ -1244,6 +1244,12 @@ footer .fa-brands:hover {
   margin: 0;
 }
 
+
+.ftestimonial p:not(span){
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+}
+
 /* Clear floats after containers */
 .ftestimonial-dcontainer::after {
   content: "";
@@ -1253,7 +1259,7 @@ footer .fa-brands:hover {
 
 /* Increase the font-size of a span element */
 .ftestimonial-dcontainer span {
-  font-size: 1.33rem;
+  font-size: 1.5rem;
   margin-right: 1rem;
 }
 
@@ -1270,13 +1276,14 @@ footer .fa-brands:hover {
 }
 
 
-/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
 .ftestimonial img {
   float: left;
   padding: 0rem 2rem 2rem 0rem;
-  max-width: 20rem;
+  max-width: 25rem;
   overflow: hidden;
+  border: 2px black;
 }
+
 
 .emftestimonial-dcontainer {
   padding: 0 25%;
