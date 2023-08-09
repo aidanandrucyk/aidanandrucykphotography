@@ -111,7 +111,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 5px 4%;
-  transition: .75s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 header.top .logo a {
@@ -151,7 +151,7 @@ header.sticky ul li a {
 header.sticky .navbar-custom li .dropdown-custom {
   color: var(--textcolor);
   text-shadow: none;
-  transition: 1.25s cubic-bezier(0.445, 0.05, 0.55, 0.95)
+  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95)
 }
 
 header.sticky .nav-dropdown-custom i {
@@ -1109,6 +1109,7 @@ iframe {
   overflow: hidden;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
+  background-color: rgb(252, 252, 250);
 }
 
 .accordion .accordion-content p {
@@ -1452,15 +1453,15 @@ p {
   }
 
   #hero1 img{
-    content: url('/Assets/hero/1v.jpg');
+    content: url('..../Assets/hero/1v.jpg');
   }
 
   #hero3 img{
-    content: url('/Assets/hero/3v.jpg');
+    content: url('..../Assets/hero/3v.jpg');
   }
 
   #hero4 img{
-    content: url('/Assets/hero/4v.jpg');
+    content: url('..../Assets/hero/4v.jpg');
   }
 
   .carousel-caption {
