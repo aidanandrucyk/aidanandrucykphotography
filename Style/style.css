@@ -425,7 +425,6 @@ section#hero {
 
 #hero {
   text-align: center;
-
 }
 
 .carousel {
@@ -462,7 +461,6 @@ section#hero {
   from {
     width: 0%
   }
-
   to {
     width: 30%
   }
@@ -505,7 +503,6 @@ section#hero {
   from {
     opacity: .4
   }
-
   to {
     opacity: 1
   }
