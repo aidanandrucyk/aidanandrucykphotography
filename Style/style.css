@@ -1026,7 +1026,7 @@ iframe {
   display: block;
   text-align: left;
   width: 100%;
-  padding: 5%;
+  padding: 2.5%;
   color: var(--textcolor);
   font-size: 1.25rem;
   font-weight: 400;
@@ -1106,13 +1106,13 @@ iframe {
   overflow: hidden;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
-  background-color: rgb(252, 252, 250);
+  background-color: rgb(251, 251, 249);
 }
 
 .accordion .accordion-content p {
   font-size: 1rem;
   font-weight: 300;
-  margin: 2.5% 2.5% 5% 2.5%;
+  margin: 2.5% 2.5% 3% 2.5%;
 }
 
 /* FOOTER */
@@ -1171,7 +1171,7 @@ footer .fa-brands:hover {
   width: 100%;
   height: 6rem;
   filter: blur(1);
-  background: linear-gradient(rgba(121, 59, 1, 0.4), rgba(121, 59, 1, 0.15), rgba(121, 59, 1, 0));
+  background: linear-gradient(rgba(121, 59, 1, 0.35), rgba(121, 59, 1, 0.15), rgba(121, 59, 1, 0));
 }
 
 /* PHOTO GALLERY */
@@ -1207,8 +1207,8 @@ footer .fa-brands:hover {
 }
 
 .sub-description{
-  font-size: .75rem;
-  padding: 1rem 5%;
+  font-size: .9rem;
+  padding: 1rem 35%;
   font-style: italic;
   text-align: center;
 }
@@ -1240,7 +1240,6 @@ footer .fa-brands:hover {
   gap: 1rem;
 }
 
-/* Style the container with a rounded border, grey background and some padding and margin */
 .ftestimonial-dcontainer {
   max-width: 100%;
   background-color: white;
@@ -1265,7 +1264,7 @@ footer .fa-brands:hover {
   display: table;
 }
 
-/* Increase the font-size of a span element */
+/* Increase font-size of span element */
 .ftestimonial-dcontainer span {
   font-size: 1.5rem;
   margin-right: 1rem;
@@ -1384,6 +1383,11 @@ p {
     left: 31px;
   }
 
+  /* Increasing FAQ box size for smaller screens */
+  .accordion button {
+    padding: 5%;
+  }
+
   /* Full-width containers */
   .timeline-dcontainer {
     width: 100%;
@@ -1413,6 +1417,11 @@ p {
   iframe {
     height: 2150px;
   }
+
+  .sub-description{
+    padding: 1rem 20%;
+  }
+
   .ftestimonial-dcontainer {
     margin: 0rem;
   }
@@ -1486,7 +1495,7 @@ p {
   }
 
   iframe {
-    height: 2555px;
+    height: 2525px;
   }
 
   .photo-gallery {
