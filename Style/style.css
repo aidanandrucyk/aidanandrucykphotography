@@ -618,7 +618,7 @@ section#hero {
 }
 
 .personal-info ol li {
-  padding: .25% 0;
+  padding: 1% 2% 1% 2%;
   color: var(--textcolor);
 }
 
