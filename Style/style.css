@@ -590,6 +590,10 @@ section#hero {
   font-weight: 800;
 }
 
+.infoSection h2 span {
+  font-size: 3rem;
+}
+
 .personal-info {
   padding: 5% 0% 0% 0%;
   text-align: justify;
@@ -852,7 +856,8 @@ q {
 .see-more-button {
   border-radius: 25px;
   border: none;
-  margin: 2.5% 0 1rem 0;
+  margin: 2.5% 1rem 1rem 1rem;
+  padding: 1rem 2rem;
   width: 15rem;
   min-height: 5rem;
   font-weight: 600;
@@ -970,6 +975,7 @@ q {
 .timeline-dcontent p {
   color: var(--textcolor);
   margin: 1rem 0;
+  text-align: justify;
 }
 
 .timeline-dcontent a {
