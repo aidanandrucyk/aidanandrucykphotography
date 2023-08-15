@@ -462,7 +462,7 @@ section#hero {
     width: 0%
   }
   to {
-    width: 30%
+    width: 80%
   }
 }
 
@@ -474,8 +474,12 @@ section#hero {
     border-color: transparent
   }
 
-  30% {
+  40% {
     border-color: var(--accentcolor)
+  }
+  
+  80% {
+    border-color: transparent
   }
 }
 
@@ -1458,9 +1462,6 @@ p {
     animation:
       typing 2s steps(20, end),
       blink-caret 1.5s step-end infinite;
-  }
-
-  .hero p {
     font-size: .25rem;
   }
 
