@@ -567,8 +567,7 @@ section#hero {
 }
 
 .infoSection {
-  text-align: justify;
-  text-justify: inter-word;
+  justify-content: space-evenly;
 }
 
 .infoSection h1 {
@@ -601,7 +600,7 @@ section#hero {
 .personal-info {
   padding: 5% 0% 0% 0%;
   text-align: justify;
-  text-justify: inter-word;
+  justify-content: space-around;
 }
 
 .personal-info hr {
