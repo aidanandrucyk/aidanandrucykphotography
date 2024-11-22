@@ -54,6 +54,10 @@ body {
   padding-bottom: 3%;
 }
 
+.body h5 {
+  text-align: center;
+}
+
 .body h1 {
   color: var(--nblack);
 }
