@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<!--Hi,
-   Thanks for checking out my code! 
-   If you have the time, I always appreciate honest feedback and suggestions on how I can improve my website!
-   Feel free to contact me at aidanmaphotography@gmail.com
--->
-
-
-<head>
+<html lang="en"><!--
+   Aidan Andrucyk Photography
+   Contact: aidanmaphotography@gmail.com
+--><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,30 +9,45 @@
     <meta name="author" content="Aidan Andrucyk">
     <title>Aidan Andrucyk Photography</title>
 
+    <!-- Favicon -->
     <link href="https://em-content.zobj.net/thumbs/240/microsoft/319/statue-of-liberty_1f5fd.png" rel="icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+    <!-- === PERFORMANCE: Preconnect to external origins === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet">
+
+    <!-- === PERFORMANCE: Single Bootstrap CSS (removed duplicate) === -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- === PERFORMANCE: Single Font Awesome (removed v4.7 duplicate; keeping v6.4) === -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Site CSS -->
     <link href="../Style/style.css" rel="stylesheet">
-    <!-- Vendor CSS Files -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- === PERFORMANCE: Bootstrap JS deferred, jQuery removed (unused here) === -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-    <!--Can delete-->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KERNX8F3C0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-KERNX8F3C0');
+    </script>
+</head>
 
 <body>
     <header>
         <div class="navbar-custom">
             <div class="logo">
-                <a id="logo-text" href="../index.html" class="">Aidan Andrucyk Photography</a>
+                <a id="logo-text" href="../index.html">Aidan Andrucyk Photography</a>
             </div>
             <ul class="links">
                 <li class="About"><a href="../index.html#about">About</a></li>
@@ -49,1986 +57,1029 @@
                             <a id="hero-port-text" href="../index.html#portfolio-cards">Portfolio</a>
                             <i class="fa fa-angle-down"></i>
                             <div class="dropdown-custom-content">
-                                <a class='drop-link' href="../pages/wedding.html">Wedding</a>
-                                <a class='drop-link' href="../pages/event.html">Event</a>
-                                <a class='drop-link' href="../pages/portraits.html">Portraits</a>
-                                <a class='drop-link' href="../pages/graduation.html">Graduation</a>
-                                <a class='drop-link' href="../pages/street.html">Street</a>
-                                <a class='drop-link' href="../pages/film.html">Film</a>
+                                <a class="drop-link" href="../pages/wedding.html">Wedding</a>
+                                <a class="drop-link" href="../pages/event.html">Event</a>
+                                <a class="drop-link" href="../pages/portraits.html">Portraits</a>
+                                <a class="drop-link" href="../pages/graduation.html">Graduation</a>
+                                <a class="drop-link" href="../pages/street.html">Street</a>
+                                <a class="drop-link" href="../pages/film.html">Film</a>
                             </div>
                         </div>
                     </li>
                 </div>
-                <li class="Hero"><a href="../pages/testimonials.html">Testimonials</a></li>
+                <li><a href="../pages/testimonials.html">Testimonials</a></li>
                 <li class="FAQ"><a href="../index.html#FAQ">FAQ</a></li>
-                <li class="Hero"><a href="../index.html#timeline">Next Steps</a></li>
+                <li><a href="../index.html#timeline">Next Steps</a></li>
             </ul>
             <a href="../index.html#contact" class="action-btn">Contact</a>
-            <div class="toggle-btn"><i class="fa-solid fa-bars"></i>
-            </div>
+            <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
         </div>
-
     </header>
 
     <div class="dropdown-custom-menu">
-        <li><a class='drop-link' href="../index.html#about">About</a></li>
+        <li><a class="drop-link" href="../index.html#about">About</a></li>
         <li>
             <a href="../index.html#portfolio-cards">
-                <div class="dropdown-custom">Portfolio
+                <div class="dropdown-custom">Portfolio</div>
             </a>
             <i class="fa fa-angle-down"></i>
             <div class="dropdown-custom-content">
-                <a class='drop-link' href="../pages/wedding.html">Wedding</a>
-                <a class='drop-link' href="../pages/event.html">Event</a>
-                <a class='drop-link' href="../pages/portraits.html">Portraits</a>
-                <a class='drop-link' href="../pages/graduation.html">Graduation</a>
-                <a class='drop-link' href="../pages/street.html">Street</a>
-                <a class='drop-link' href="../pages/film.html">Film</a>
+                <a class="drop-link" href="../pages/wedding.html">Wedding</a>
+                <a class="drop-link" href="../pages/event.html">Event</a>
+                <a class="drop-link" href="../pages/portraits.html">Portraits</a>
+                <a class="drop-link" href="../pages/graduation.html">Graduation</a>
+                <a class="drop-link" href="../pages/street.html">Street</a>
+                <a class="drop-link" href="../pages/film.html">Film</a>
             </div>
+        </li>
+        <li><a class="drop-link" href="../pages/testimonials.html">Testimonials</a></li>
+        <li><a class="drop-link" href="../index.html#FAQ">FAQ</a></li>
+        <li><a class="drop-link" href="../index.html#timeline">Next Steps</a></li>
+        <li><a class="drop-link" href="../index.html#contact">Contact</a></li>
+        <li>
+            <a class="drop-link" href="https://www.instagram.com/aidanma.photography/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </li>
     </div>
-    </li>
-    <li><a class='drop-link' href="../pages/testimonials.html">Testimonials</a></li>
-    <li><a class='drop-link' href="../index.html#FAQ">FAQ</a></li>
-    <li><a class='drop-link' href="../index.html#timeline">Next Steps</a></li>
-    <li><a class='drop-link' href="../index.html#contact" class="action-btn">Contact</a></li>
-    <li><a class='drop-link' href="https://www.instagram.com/aidanma.photography/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-        </a></li>
-    </div>
 
-
-    <div class="non-hero">
-
-
-    </div>
+    <div class="non-hero"></div>
     <br>
-    
+
     <h1 class="alt-sect-header">Film Photos</h1>
-    <h2 class="subheading">A few frames from my Kodak Ektar H35 & 1983 Canon T50</h2>
+    <h2 class="subheading">A few frames from my Kodak Ektar H35 &amp; 1983 Canon T50</h2>
 
-
+    <!-- ===================== MANHATTAN ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- New York, NY -</h4>
-            </div>
+            <div class="gtitle"><h4>- Manhattan, NY -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                     <div class="gphoto">
-                        <img src="../Assets/portfolio/film/0D9DCBE2-7D15-429D-BD88-AD9EAAFCA0DB (1) (1).jpg" alt="">
-                    </div>
-                  
-
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000033360062.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279610001.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/newnyc/000915390021.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/newnyc/000123610014.jpg" alt="">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000014370043 (1).jpg" alt="">
-                    </div>
-                     <div class="gphoto">
-                        <img src="../Assets/portfolio/film/newnyc/462582438_885637053298666_3384053408451772656_n.jpg" alt="">
-                    </div>
-                   
-                    
-                    
+                    <!-- First 2 images: NO lazy load (above the fold) -->
+                    <div class="gphoto"><img src="../Assets/portfolio/film/0D9DCBE2-7D15-429D-BD88-AD9EAAFCA0DB (1) (1).jpg" alt="Manhattan film photo"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000033360062.jpg" alt="Manhattan film photo"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/newnyc/000567000038.jpg" alt="Manhattan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/newnyc/000915390027.jpg" alt="Manhattan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000014370043 (1).jpg" alt="Manhattan film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/A0F047B2-D225-4BF0-8395-C98A8AFF5AB0 (1) (1).jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000151460080 (1).jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000151460079 (1).jpg" alt="">
-                    </div>
-                    
-                   
-                    
-                    
-                    
-                    
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000454060018.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000454060019.jpg" alt="">
-                    </div>
-                    
-                   
-                   <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506150056-2.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/newnyc/000828250057.jpg" alt="">
-                    </div>
-
-                    
-                   
-                    
+                    <div class="gphoto"><img src="../Assets/portfolio/film/A0F047B2-D225-4BF0-8395-C98A8AFF5AB0 (1) (1).jpg" alt="Manhattan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/newnyc/000915390019.jpg" alt="Manhattan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/newnyc/000567000003.jpg" alt="Manhattan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/newnyc/000828250028.jpg" alt="Manhattan film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                   
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000224690028 (1).jpg" alt="">
-                    </div> 
-                   
-                    
-             
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000151470013 (1).jpg" alt="">
-                    </div>
-
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000151470019 (1).jpg" alt="">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/newnyc/000123610022.jpg" alt="">
-                    </div>
-                    
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/newnyc/000828250045.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/newnyc/000828250028.jpg" alt="">
-                    </div>
-
-                    
-                   
-
-                   
-
-                     <div class="gphoto">
-                        <img src="../Assets/portfolio/film/newnyc/462551110_872264205095547_7367411689129971372_n.jpg" alt="">
-                    </div>
-                     <div class="gphoto">
-                      <img src="../Assets/portfolio/film/000151460068 (1).jpg" alt="">
-                  </div>
-
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000224690028 (1).jpg" alt="Manhattan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000151470013 (1).jpg" alt="Manhattan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000151470019 (1).jpg" alt="Manhattan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/newnyc/462551110_872264205095547_7367411689129971372_n.jpg" alt="Manhattan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/newnyc/000828250045.jpg" alt="Manhattan film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
-    
-    
-
-
-
-          <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Hong Kong, HKSAR -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hk/000021430041.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hk/000021430024.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hk/000021430027.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hk/000021430011.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hk/000021420062.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hk/000021430001.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hk/000021430037.jpg" alt="" loading="lazy">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hk/000021420047.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hk/250416113405-000023310001.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Saigon (HCM), Vietnam -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hcm/000305830048.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hcm/000305820069.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hcm/000305820019.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hcm/000305820029.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hcm/000305830005 (2).jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hcm/000305820030.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- ===================== HONG KONG ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- San Francisco, CA -</h4>
-            </div>
+            <div class="gtitle"><h4>- Hong Kong, HKSAR -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/sf/000787120006.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hk/000021430041.jpg" alt="Hong Kong film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hk/000021430024.jpg" alt="Hong Kong film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hk/000021430027.jpg" alt="Hong Kong film photo" loading="lazy"></div>
                 </div>
-                
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/sf/000787120015.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hk/000021430011.jpg" alt="Hong Kong film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hk/000021420062.jpg" alt="Hong Kong film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hk/000021430001.jpg" alt="Hong Kong film photo" loading="lazy"></div>
                 </div>
-                
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/sf/000787120005.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hk/000021430037.jpg" alt="Hong Kong film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hk/000021420047.jpg" alt="Hong Kong film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hk/250416113405-000023310001.jpg" alt="Hong Kong film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-            <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Snaefellsjkull, Iceland -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/snaefellsjkull/000033650031.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/snaefellsjkull/000033650035.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/snaefellsjkull/000033650059.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-         <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Taipei, Taiwan -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/taipei/000021420009.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/taipei/000021420003.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/taipei/000021420011.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/taipei/004506230053.jpg" alt="">
-                    </div>
-                   
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/taipei/000021420027.jpg" alt="">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/taipei/004506230054.jpg" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-         <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Pittsburgh, PA -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506140011-2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506140025-2.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506140005-2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506140017-2.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506140013-2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506140030-2.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-     <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Palawan, Philippines -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/elnido/250203232136-000028.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/elnido/250203232137-000017.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/elnido/250203232136-000010.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/elnido/250203232137-000027-2.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/elnido/250203232136-000028-2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/elnido/250203232137-000014-2.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
+    <!-- ===================== SAIGON ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Kuala Lumpur, Malaysia -</h4>
-            </div>
+            <div class="gtitle"><h4>- Saigon (HCM), Vietnam -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250306024803-000096170016.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250223132119-000023710006.jpg" alt="" loading="lazy">
-                    </div>
-                                        <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250223132119-000023710016-2.jpg" alt="" loading="lazy">
-                    </div>
-                                                            <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250223132119-000023710002.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hcm/000305830048.jpg" alt="Saigon film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hcm/000305820069.jpg" alt="Saigon film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250223132119-000023710013-2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250223132119-000023710034.jpg" alt="" loading="lazy">
-                    </div>
-                                        <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250306024803-000096170021.jpg" alt="" loading="lazy">
-                    </div>
-                                                            <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250223132119-000023710005.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hcm/000305820019.jpg" alt="Saigon film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hcm/000305820029.jpg" alt="Saigon film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250306024802-000096170001.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250223132119-000023710033-2.jpg" alt="" loading="lazy">
-                    </div>
-                                        <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250223132119-000023710020.jpg" alt="" loading="lazy">
-                    </div>
-                                                            <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kl/250223132119-000023710032.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hcm/000305830005 (2).jpg" alt="Saigon film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hcm/000305820030.jpg" alt="Saigon film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
+    <!-- ===================== SAN FRANCISCO ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Angkor Wat, Cambodia -</h4>
-            </div>
+            <div class="gtitle"><h4>- San Francisco, CA -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/angkorwat/000305140052.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/angkorwat/000305140037.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/sf/000787120006.jpg" alt="San Francisco film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/angkorwat/000305150029.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/angkorwat/000305150009.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/sf/000787120015.jpg" alt="San Francisco film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/angkorwat/000305140027.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/angkorwat/000305150043.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/sf/000787120005.jpg" alt="San Francisco film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
+    <!-- ===================== ICELAND – SNAEFELLSJOKULL ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Cebu & Bohol, Philippines -</h4>
-            </div>
+            <div class="gtitle"><h4>- Snaefellsjökull, Iceland -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/cebubohol/250203232137-000038.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/snaefellsjkull/000033650031.jpg" alt="Iceland film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/cebubohol/250203232137-000037.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/snaefellsjkull/000033650035.jpg" alt="Iceland film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/cebubohol/250203232137-000038-2.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/snaefellsjkull/000033650059.jpg" alt="Iceland film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-        <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Singapore, Singapore -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/singapore/250221002333-014-2.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/singapore/000828380018.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/singapore/250221002333-001.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
+    <!-- ===================== TAIPEI ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Penang, Malaysia -</h4>
-            </div>
+            <div class="gtitle"><h4>- Taipei, Taiwan -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/penang/250306024802-000096170051.jpg" alt="" loading="lazy">
-                    </div>
-
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/penang/250310004622-000096360025.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/taipei/000021420009.jpg" alt="Taipei film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/taipei/000021420003.jpg" alt="Taipei film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/penang/250306024803-000096170035.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/penang/250306024802-000096170058.jpg" alt="" loading="lazy">
-                    </div>
-
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/taipei/000021420011.jpg" alt="Taipei film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/taipei/004506230053.jpg" alt="Taipei film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/penang/250306024802-000096170053.jpg" alt="" loading="lazy">
-                    </div>
-
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/penang/250310004622-000096360011.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/taipei/000021420027.jpg" alt="Taipei film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/taipei/004506230054.jpg" alt="Taipei film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
 
-
+    <!-- ===================== PITTSBURGH ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Osaka, Japan -</h4>
-            </div>
+            <div class="gtitle"><h4>- Pittsburgh, PA -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/osaka/74870017.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/osaka/000828390057.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506140011-2.jpg" alt="Pittsburgh film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506140025-2.jpg" alt="Pittsburgh film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/osaka/74870068.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/osaka/000828390053.jpg" alt="" loading="lazy">
-                    </div>
-                    
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506140005-2.jpg" alt="Pittsburgh film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506140017-2.jpg" alt="Pittsburgh film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/osaka/74870064.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/osaka/74870050.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506140013-2.jpg" alt="Pittsburgh film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506140030-2.jpg" alt="Pittsburgh film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===================== PALAWAN ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Busan, South Korea -</h4>
-            </div>
+            <div class="gtitle"><h4>- Palawan, Philippines -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/busan/000288380060.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/busan/000288390077.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/busan/000288380018.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/elnido/250203232136-000028.jpg" alt="Palawan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/elnido/250203232137-000017.jpg" alt="Palawan film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/busan/000288380039.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/busan/000288390056.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/busan/000288380029.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/busan/000288380024.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/elnido/250203232136-000010.jpg" alt="Palawan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/elnido/250203232137-000027-2.jpg" alt="Palawan film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/busan/000288380066.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/busan/000288380070.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/busan/000288380011.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/elnido/250203232136-000028-2.jpg" alt="Palawan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/elnido/250203232137-000014-2.jpg" alt="Palawan film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-         <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Hanoi, Vietnam -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536360035.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536360036.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536370030.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536360042.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536370012.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536360038.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536360060.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536360031.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536360046.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536370040.jpg" alt="" loading="lazy">
-                    </div>
-                    
-                </div>
-
-                <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536360054.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536360032.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536370006.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536360041.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/hanoi/250313202536370027.jpg" alt="" loading="lazy">
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-         <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Reykjavik, Iceland -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/000915390037.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/000915390053.jpg" alt="" loading="lazy">
-                    </div>
-                    
-                </div>
-
-                <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/000915390051.jpg" alt="" loading="lazy">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
+    <!-- ===================== KUALA LUMPUR ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Tokyo, Japan -</h4>
-            </div>
+            <div class="gtitle"><h4>- Kuala Lumpur, Malaysia -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/000828370006.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310028.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310069.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280053.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280009.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250306024803-000096170016.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250223132119-000023710006.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250223132119-000023710016-2.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250223132119-000023710002.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/000828370010.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310064.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280071.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310075.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280022.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250223132119-000023710013-2.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250223132119-000023710034.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250306024803-000096170021.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250223132119-000023710005.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310046.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310067.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280061.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280039.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280015.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250306024802-000096170001.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250223132119-000023710033-2.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250223132119-000023710020.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kl/250223132119-000023710032.jpg" alt="Kuala Lumpur film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===================== ANGKOR WAT ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- New Taipei, Taiwan -</h4>
-            </div>
+            <div class="gtitle"><h4>- Angkor Wat, Cambodia -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/newtaipei/004506230017.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/newtaipei/004506230046.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="./Assets/portfolio/film/asia/newtaipei/004506230032.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/angkorwat/000305140052.jpg" alt="Angkor Wat film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/angkorwat/000305140037.jpg" alt="Angkor Wat film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/newtaipei/004506210077.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/newtaipei/004506230014.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/newtaipei/004506230002.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/angkorwat/000305150029.jpg" alt="Angkor Wat film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/angkorwat/000305150009.jpg" alt="Angkor Wat film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/newtaipei/004506230007.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/newtaipei/004506230048.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/newtaipei/004506230031.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/angkorwat/000305140027.jpg" alt="Angkor Wat film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/angkorwat/000305150043.jpg" alt="Angkor Wat film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-            <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Austurland, Iceland -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/se/000033640018.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/se/000033640024.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/se/000033660043.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/se/000033640025.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/se/000033640037.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/iceland/se/000033660069.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- ===================== QUEENS ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Bangkok, Thailand -</h4>
-            </div>
+            <div class="gtitle"><h4>- Queens, NY -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/bangkok/000034930055.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/bangkok/250306025056-000096360038.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/bangkok/250306025056-000096360039.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000279610001.jpg" alt="Queens film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506150056-2.jpg" alt="Queens film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/bangkok/000034930008.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/bangkok/000034930012.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/bangkok/000034930054.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000151460079 (1).jpg" alt="Queens film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000454060018.jpg" alt="Queens film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000454060019.jpg" alt="Queens film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/bangkok/000034930027.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/bangkok/000034930060.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/bangkok/250306025056-000096360052.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000151460080 (1).jpg" alt="Queens film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000151460068 (1).jpg" alt="Queens film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-        <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Montreal, QC -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279610071.jpg" alt="">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279610038.jpg" alt="">
-                    </div>
-                     <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279610072.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div class="gcolumn">
-                                    
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279610027.jpg" alt="">
-                    </div>
-
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279610035.jpg" alt="">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279610053.jpg" alt="">
-                    </div>
-
-
-                    
-                   
-                </div>
-
-                <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279610069.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279610062.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279610070.jpg" alt="">
-                    </div>
-                    
-
-                    
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-   
-
-    
+    <!-- ===================== CEBU & BOHOL ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Seoul, South Korea -</h4>
-            </div>
+            <div class="gtitle"><h4>- Cebu &amp; Bohol, Philippines -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/seoul/000288390011.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/seoul/000828380066.jpg" alt="" loading="lazy">
-                    </div>
-                        <div class="gphoto">
-                            <img src="../Assets/portfolio/film/asia/seoul/000787120055.jpg" alt="" loading="lazy">
-                        </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/cebubohol/250203232137-000038.jpg" alt="Cebu Bohol film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/seoul/000828380062.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/seoul/000787120070.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/seoul/000787120067.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/seoul/000787120071.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/cebubohol/250203232137-000037.jpg" alt="Cebu Bohol film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/seoul/000288390015.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/seoul/000288390003.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/seoul/000787120039.jpg" alt="" loading="lazy">
-
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/cebubohol/250203232137-000038-2.jpg" alt="Cebu Bohol film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===================== SINGAPORE ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Tainan, Taiwan -</h4>
-            </div>
+            <div class="gtitle"><h4>- Singapore -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tainan/004506220069.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tainan/004506220063.jpg" alt="">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/singapore/250221002333-014-2.jpg" alt="Singapore film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tainan/004506220073.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tainan/004506220035.jpg" alt="">
-                    </div>
-                   
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/singapore/000828380018.jpg" alt="Singapore film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tainan/004506220075.jpg" alt="">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/tainan/004506220068.jpg" alt="">
-                    </div>
-
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/singapore/250221002333-001.jpg" alt="Singapore film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <!-- ===================== PENANG ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Toronto, ON -</h4>
-            </div>
+            <div class="gtitle"><h4>- Penang, Malaysia -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000403010040.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000403010027.jpg" alt="">
-                    </div>
-
-                    
-                    
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/penang/250306024802-000096170051.jpg" alt="Penang film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/penang/250310004622-000096360025.jpg" alt="Penang film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000403010024.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000403010018.jpg" alt="">
-                    </div>
-                   
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/penang/250306024803-000096170035.jpg" alt="Penang film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/penang/250306024802-000096170058.jpg" alt="Penang film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000403010058.jpg" alt="">
-                    </div>
-                    
-                    
-
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000403010042.jpg" alt="">
-                    </div>
-
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/penang/250306024802-000096170053.jpg" alt="Penang film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/penang/250310004622-000096360011.jpg" alt="Penang film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-            <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Phnom Penh, Cambodia -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/phnompenh/000305150074.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/phnompenh/000305150065.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/phnompenh/000305820012.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/phnompenh/000305820008.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/phnompenh/000305150069.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/phnompenh/000305820014.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
+    <!-- ===================== OSAKA ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Boston, MA -</h4>
-            </div>
+            <div class="gtitle"><h4>- Osaka, Japan -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000102620007 (1).jpg" alt="">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000454060063.jpg" alt="">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/osaka/74870017.jpg" alt="Osaka film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/osaka/000828390057.jpg" alt="Osaka film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000454060072.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000454060064.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000454060002.jpg" alt="">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/osaka/74870068.jpg" alt="Osaka film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/osaka/000828390053.jpg" alt="Osaka film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000102620074.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000454060069.jpg" alt="">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/osaka/74870064.jpg" alt="Osaka film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/osaka/74870050.jpg" alt="Osaka film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    
-     <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Kyoto, Japan -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kyoto/000828370078.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kyoto/000828390003.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kyoto/000828370021.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kyoto/000828390045.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kyoto/000828370022.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/kyoto/000828390002.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
+    <!-- ===================== BUSAN ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Portland, OR -</h4>
-            </div>
+            <div class="gtitle"><h4>- Busan, South Korea -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000033370069.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000033360001.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/busan/000288380060.jpg" alt="Busan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/busan/000288390077.jpg" alt="Busan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/busan/000288380018.jpg" alt="Busan film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000033370051.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000033360014.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/busan/000288380039.jpg" alt="Busan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/busan/000288390056.jpg" alt="Busan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/busan/000288380029.jpg" alt="Busan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/busan/000288380024.jpg" alt="Busan film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000033370058.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000033360003.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/busan/000288380066.jpg" alt="Busan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/busan/000288380070.jpg" alt="Busan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/busan/000288380011.jpg" alt="Busan film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===================== HANOI ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Keelung, Taiwan -</h4>
-            </div>
+            <div class="gtitle"><h4>- Hanoi, Vietnam -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/keelung/004506230023.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536360035.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536360036.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536370030.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536360042.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536370012.jpg" alt="Hanoi film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/keelung/004506230025.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536360038.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536360060.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536360031.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536360046.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536370040.jpg" alt="Hanoi film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/keelung/004506230027.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536360054.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536360032.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536370006.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536360041.jpg" alt="Hanoi film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/hanoi/250313202536370027.jpg" alt="Hanoi film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===================== REYKJAVIK ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Philadelphia, PA -</h4>
-            </div>
+            <div class="gtitle"><h4>- Reykjavik, Iceland -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000275450049 (1).jpg" alt="">
-                    </div>
-                    
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/000915390037.jpg" alt="Reykjavik film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/phil/462549379_981085520719634_8703228916144143561_n.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/phil/462565506_898369715582581_585478787100334920_n.jpg" alt="">
-                    </div>
-
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/000915390053.jpg" alt="Reykjavik film photo" loading="lazy"></div>
                 </div>
-
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/phil/462559384_1216779226046189_8704272909182920171_n.jpg" alt="">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/000915390051.jpg" alt="Reykjavik film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    
-
-
-
+    <!-- ===================== TOKYO ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Olympia, WA -</h4>
-            </div>
+            <div class="gtitle"><h4>- Tokyo, Japan -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000543580061.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/000828370006.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310028.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310069.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280053.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280009.jpg" alt="Tokyo film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000033370007.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/000828370010.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310064.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280071.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310075.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280022.jpg" alt="Tokyo film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000033370029.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310046.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113405-000023310067.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280061.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280039.jpg" alt="Tokyo film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tokyo/250416113513-000023280015.jpg" alt="Tokyo film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-         <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Taito & Karenko, Taiwan -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/taitoharenko/004506210047.jpg" alt="">
-                    </div>
-                    
-                </div>
-
-                <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/taitoharenko/004506210039.jpg" alt="">
-                    </div>
-                    
-                </div>
-                
-                <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/taitoharenko/004506210041.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- ===================== NEW TAIPEI ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Cleveland, OH -</h4>
-            </div>
+            <div class="gtitle"><h4>- New Taipei, Taiwan -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506140047-2.jpg" alt="">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/newtaipei/004506230017.jpg" alt="New Taipei film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/newtaipei/004506230046.jpg" alt="New Taipei film photo" loading="lazy"></div>
+                    <!-- Fixed broken path: was ./Assets/... should be ../Assets/... -->
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/newtaipei/004506230032.jpg" alt="New Taipei film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506140033-2.jpg" alt="">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/newtaipei/004506210077.jpg" alt="New Taipei film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/newtaipei/004506230014.jpg" alt="New Taipei film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/newtaipei/004506230002.jpg" alt="New Taipei film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506140055-2.jpg" alt="">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/newtaipei/004506230007.jpg" alt="New Taipei film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/newtaipei/004506230048.jpg" alt="New Taipei film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/newtaipei/004506230031.jpg" alt="New Taipei film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
+    <!-- ===================== AUSTURLAND ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Seattle, WA -</h4>
-            </div>
+            <div class="gtitle"><h4>- Austurland, Iceland -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000543580004.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000543580043.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/se/000033640018.jpg" alt="Iceland film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/se/000033640024.jpg" alt="Iceland film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000543580012.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000543580042.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/se/000033640043.jpg" alt="Iceland film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/se/000033640025.jpg" alt="Iceland film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000543580001.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000543580028.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/se/000033640037.jpg" alt="Iceland film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/iceland/se/000033660069.jpg" alt="Iceland film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- ===================== BANGKOK ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Uji, Japan -</h4>
-            </div>
+            <div class="gtitle"><h4>- Bangkok, Thailand -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/uji/000828370026.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/uji/000828370012.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/bangkok/000034930055.jpg" alt="Bangkok film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/bangkok/250306025056-000096360038.jpg" alt="Bangkok film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/bangkok/250306025056-000096360039.jpg" alt="Bangkok film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/uji/000828370029.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/uji/000828370056.jpg" alt="" loading="lazy">
-                    </div>
-                    
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/bangkok/000034930008.jpg" alt="Bangkok film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/bangkok/000034930012.jpg" alt="Bangkok film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/bangkok/000034930054.jpg" alt="Bangkok film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/uji/000828370058.jpg" alt="" loading="lazy">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/uji/000828370055.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/bangkok/000034930027.jpg" alt="Bangkok film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/bangkok/000034930060.jpg" alt="Bangkok film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/bangkok/250306025056-000096360052.jpg" alt="Bangkok film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===================== MONTREAL ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Raleigh, NC -</h4>
-            </div>
+            <div class="gtitle"><h4>- Montreal, QC -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/raleigh/000149500016.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000279610071.jpg" alt="Montreal film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000279610072.jpg" alt="Montreal film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/raleigh/000149510009.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000279610062.jpg" alt="Montreal film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000279610027.jpg" alt="Montreal film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/raleigh/000149510012.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000279610069.jpg" alt="Montreal film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000279610070.jpg" alt="Montreal film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
-    
 
-
+    <!-- ===================== SEOUL ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Benguet, Philippines -</h4>
-            </div>
+            <div class="gtitle"><h4>- Seoul, South Korea -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/baguio/250223133039-006-2.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/seoul/000288390011.jpg" alt="Seoul film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/seoul/000828380066.jpg" alt="Seoul film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/seoul/000787120055.jpg" alt="Seoul film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/baguio/250223133039-013.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/seoul/000828380062.jpg" alt="Seoul film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/seoul/000787120070.jpg" alt="Seoul film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/seoul/000787120067.jpg" alt="Seoul film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/seoul/000787120071.jpg" alt="Seoul film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/baguio/250221002433-005.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/seoul/000288390015.jpg" alt="Seoul film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/seoul/000288390003.jpg" alt="Seoul film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/seoul/000787120039.jpg" alt="Seoul film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-       <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Fukuoka, Japan -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/fukuoka/74880036.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/fukuoka/74880035.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/fukuoka/74880070.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/fukuoka/74880072.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/fukuoka/74880079.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/fukuoka/74880021.jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <section class="photo-gallery">
-        <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Washington, DC -</h4>
-            </div>
-            <div class="photo-gallery">
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/0F9CF883-9628-4225-9D71-266650ECB042 (1) (1).jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/A578930E-359B-435A-9E92-E8327CCD809B (1).jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/6A1B46A6-8626-4D2F-85C8-B3DF0DA6AABE (1).jpg" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- ===================== TAINAN ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>- Metro Manila, Philippines -</h4>
-            </div>
+            <div class="gtitle"><h4>- Tainan, Taiwan -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250221002333-024.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250221002433-038-2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223132450-000021240019-2.jpg" alt="" loading="lazy">
-                    </div>
-                                        <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250221002433-038.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223133443-023.jpg" alt="" loading="lazy">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223132450-000021240032.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tainan/004506220069.jpg" alt="Tainan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tainan/004506220063.jpg" alt="Tainan film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223133443-008.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250221002333-019.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223132450-000021240022.jpg" alt="" loading="lazy">
-                    </div>
-
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223132450-000021240009-2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223132450-000021240006-2.jpg" alt="" loading="lazy">
-                    </div>
-                     <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223132450-000021240013-2.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tainan/004506220073.jpg" alt="Tainan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tainan/004506220035.jpg" alt="Tainan film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223132450-000021240023-2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250221002333-029.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223132450-000021240020-2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223132450-000021240010.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/asia/manila/250223132450-000021240033.jpg" alt="" loading="lazy">
-                    </div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tainan/004506220075.jpg" alt="Tainan film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/tainan/004506220068.jpg" alt="Tainan film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    
+    <!-- ===================== TORONTO ===================== -->
     <section class="photo-gallery">
         <div class="photo-dcontainer">
-            <div class="gtitle">
-                <h4>-  NJ -</h4>
-            </div>
+            <div class="gtitle"><h4>- Toronto, ON -</h4></div>
             <div class="photo-gallery">
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000014370053 (1).jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279600001.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506150020-2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279600046.jpg" alt="">
-                    </div>
-                    
-
-
-                   
-                    
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000386300015.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000198240007.jpg" alt="" loading="lazy">
-                    </div>            
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000151460077.jpg" alt="" loading="lazy">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/newnyc/000148140012.jpg" alt="" loading="lazy">
-                    </div>
-                    
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000403010040.jpg" alt="Toronto film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000403010027.jpg" alt="Toronto film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000030330068 (1).jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000279600055.jpg" alt="">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506150023-2.jpg" alt="" loading="lazy">
-                    </div>
-                    
-                                     
-                    <!--
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000454060029.jpg" alt="" loading="lazy">
-                    </div>
-                    -->
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000386300014.jpg" alt="" loading="lazy">
-                    </div>
-                    
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000198240013.jpg" alt="" loading="lazy">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000386300058.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506150013-2.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000506150066-2.jpg" alt="" loading="lazy">
-                    </div>                               
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/newnyc/000148140007.jpg" alt="" loading="lazy">
-                    </div>    
-                    
-                    
-                    
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000403010024.jpg" alt="Toronto film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000403010018.jpg" alt="Toronto film photo" loading="lazy"></div>
                 </div>
-
                 <div class="gcolumn">
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000151460078 (1).jpg" alt="" loading="lazy">
-                    </div>
-                    
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000386300046.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000454060031.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000454060053.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000198240028.jpg" alt="" loading="lazy">
-                    </div>   
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000102620004 (1) (1).jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/000198240008.jpg" alt="" loading="lazy">
-                    </div>
-                                     
-                    <div class="gphoto">
-                        <img src="../Assets/portfolio/film/newnyc/000148140030.jpg" alt="" loading="lazy">
-                    </div>
-                    
-                    
-                    
-                    
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000403010058.jpg" alt="Toronto film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000403010042.jpg" alt="Toronto film photo" loading="lazy"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===================== PHNOM PENH ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Phnom Penh, Cambodia -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/phnompenh/000305150074.jpg" alt="Phnom Penh film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/phnompenh/000305150065.jpg" alt="Phnom Penh film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/phnompenh/000305820012.jpg" alt="Phnom Penh film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/phnompenh/000305820008.jpg" alt="Phnom Penh film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/phnompenh/000305150069.jpg" alt="Phnom Penh film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/phnompenh/000305820014.jpg" alt="Phnom Penh film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!--SCRIPTS-->
-    <script src="../scripts/header.js"></script>
-    <script src="../scripts/faq.js"></script>
-    <script src="../scripts/testimonial.js"></script>
-    <script type="text/javascript" src="../scripts/slider.js"></script>
+    <!-- ===================== BOSTON ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Boston, MA -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000102620007 (1).jpg" alt="Boston film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000454060063.jpg" alt="Boston film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/boston/000567000022.jpg" alt="Boston film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000454060072.jpg" alt="Boston film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000454060064.jpg" alt="Boston film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000454060002.jpg" alt="Boston film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000102620074.jpg" alt="Boston film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000454060069.jpg" alt="Boston film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!--VENDOR SCRIPTS-->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <!-- ===================== KYOTO ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Kyoto, Japan -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kyoto/000828370078.jpg" alt="Kyoto film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kyoto/000828390003.jpg" alt="Kyoto film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kyoto/000828370021.jpg" alt="Kyoto film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kyoto/000828390045.jpg" alt="Kyoto film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kyoto/000828370022.jpg" alt="Kyoto film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/kyoto/000828390002.jpg" alt="Kyoto film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KERNX8F3C0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <!-- ===================== PORTLAND ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Portland, OR -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000033370069.jpg" alt="Portland film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000033360001.jpg" alt="Portland film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000033370051.jpg" alt="Portland film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000033360014.jpg" alt="Portland film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000033370058.jpg" alt="Portland film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000033360003.jpg" alt="Portland film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        gtag('config', 'G-KERNX8F3C0');
-    </script>
-</body>
+    <!-- ===================== KEELUNG ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Keelung, Taiwan -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/keelung/004506230023.jpg" alt="Keelung film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/keelung/004506230025.jpg" alt="Keelung film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/keelung/004506230027.jpg" alt="Keelung film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PHILADELPHIA ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Philadelphia, PA -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000275450049 (1).jpg" alt="Philadelphia film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/phil/462549379_981085520719634_8703228916144143561_n.jpg" alt="Philadelphia film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/phil/462565506_898369715582581_585478787100334920_n.jpg" alt="Philadelphia film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/phil/462559384_1216779226046189_8704272909182920171_n.jpg" alt="Philadelphia film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== OLYMPIA ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Olympia, WA -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000543580061.jpg" alt="Olympia film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000033370007.jpg" alt="Olympia film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000033370029.jpg" alt="Olympia film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TAITO & KARENKO ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Taito &amp; Karenko, Taiwan -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/taitoharenko/004506210047.jpg" alt="Taiwan film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/taitoharenko/004506210039.jpg" alt="Taiwan film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/taitoharenko/004506210041.jpg" alt="Taiwan film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CLEVELAND ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Cleveland, OH -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506140047-2.jpg" alt="Cleveland film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506140033-2.jpg" alt="Cleveland film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506140055-2.jpg" alt="Cleveland film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEATTLE ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Seattle, WA -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000543580004.jpg" alt="Seattle film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000543580043.jpg" alt="Seattle film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000543580012.jpg" alt="Seattle film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000543580042.jpg" alt="Seattle film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000543580001.jpg" alt="Seattle film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000543580028.jpg" alt="Seattle film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== UJI ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Uji, Japan -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/uji/000828370026.jpg" alt="Uji film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/uji/000828370012.jpg" alt="Uji film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/uji/000828370029.jpg" alt="Uji film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/uji/000828370056.jpg" alt="Uji film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/uji/000828370058.jpg" alt="Uji film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/uji/000828370055.jpg" alt="Uji film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== RALEIGH ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Raleigh, NC -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/raleigh/000149500016.jpg" alt="Raleigh film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/raleigh/000149510009.jpg" alt="Raleigh film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/raleigh/000149510012.jpg" alt="Raleigh film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== BENGUET ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Benguet, Philippines -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/baguio/250223133039-006-2.jpg" alt="Benguet film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/baguio/250223133039-013.jpg" alt="Benguet film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/baguio/250221002433-005.jpg" alt="Benguet film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FUKUOKA ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Fukuoka, Japan -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/fukuoka/74880036.jpg" alt="Fukuoka film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/fukuoka/74880035.jpg" alt="Fukuoka film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/fukuoka/74880070.jpg" alt="Fukuoka film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/fukuoka/74880072.jpg" alt="Fukuoka film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/fukuoka/74880079.jpg" alt="Fukuoka film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/fukuoka/74880021.jpg" alt="Fukuoka film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WASHINGTON DC ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Washington, DC -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/0F9CF883-9628-4225-9D71-266650ECB042 (1) (1).jpg" alt="Washington DC film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/A578930E-359B-435A-9E92-E8327CCD809B (1).jpg" alt="Washington DC film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/6A1B46A6-8626-4D2F-85C8-B3DF0DA6AABE (1).jpg" alt="Washington DC film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== METRO MANILA ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- Metro Manila, Philippines -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250221002333-024.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250221002433-038-2.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223132450-000021240019-2.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250221002433-038.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223133443-023.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223132450-000021240032.jpg" alt="Manila film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223133443-008.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250221002333-019.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223132450-000021240022.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223132450-000021240009-2.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223132450-000021240006-2.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223132450-000021240013-2.jpg" alt="Manila film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223132450-000021240023-2.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250221002333-029.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223132450-000021240020-2.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223132450-000021240010.jpg" alt="Manila film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/asia/manila/250223132450-000021240033.jpg" alt="Manila film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== NEW JERSEY ===================== -->
+    <section class="photo-gallery">
+        <div class="photo-dcontainer">
+            <div class="gtitle"><h4>- NJ -</h4></div>
+            <div class="photo-gallery">
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000014370053 (1).jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000279600001.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506150020-2.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000279600046.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000386300015.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000198240007.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000151460077.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/newnyc/000148140012.jpg" alt="NJ film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000030330068 (1).jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000279600055.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506150023-2.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000386300014.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000198240013.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000386300058.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506150013-2.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000506150066-2.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/newnyc/000148140007.jpg" alt="NJ film photo" loading="lazy"></div>
+                </div>
+                <div class="gcolumn">
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000151460078 (1).jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000386300046.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000454060031.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000454060053.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000198240028.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000102620004 (1) (1).jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/000198240008.jpg" alt="NJ film photo" loading="lazy"></div>
+                    <div class="gphoto"><img src="../Assets/portfolio/film/newnyc/000148140030.jpg" alt="NJ film photo" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site scripts — deferred so they never block rendering -->
+    <script defer="" src="../scripts/header.js"></script>
+    <script defer="" src="../scripts/faq.js"></script>
+    <script defer="" src="../scripts/testimonial.js"></script>
+    <script defer="" src="../scripts/slider.js"></script>
+
+
 
 <footer>
-    <p><a href="mailto:aidanmaphotography@gmail.com">aidanmaphotography@gmail.com</a>
-        <a href="https://www.instagram.com/aidanma.photography/" target="_blank">
+    <p>
+        <a href="mailto:aidanmaphotography@gmail.com">aidanmaphotography@gmail.com</a>
+        <a href="https://www.instagram.com/aidanma.photography/" target="_blank" rel="noopener">
             <span>|</span>
-            <i class="fa-brands fa-instagram"></i></a>
+            <i class="fa-brands fa-instagram"></i>
+        </a>
     </p>
     <hr class="footer-bar">
-    <p>Copyright © 2024 Aidan Matthew Andrucyk Photography </p>
-
-    <!-- BACK TO TOP -->
+    <p>Copyright © 2024 Aidan Matthew Andrucyk Photography</p>
     <div class="back-to-top-dcontainer">
         <a href="#" class="back-to-top-icon"><i class="fas fa-arrow-up"></i> Back to top</a>
     </div>
-
-
 </footer>
 
-</html>
+
+</body></html>
